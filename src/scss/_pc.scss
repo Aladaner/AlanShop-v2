@@ -1,0 +1,15 @@
+.pc {
+    .menu-catalog__item:hover {
+        .sub-menu {
+            display: flex;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+            transform: translate(0px, 0px);
+        }
+    }
+
+    .arrow {
+        display: none;
+    }
+}

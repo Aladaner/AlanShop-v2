@@ -1,0 +1,13 @@
+@import "../components/header";
+
+@media (max-width: 1024px) {
+    .location-header {
+        display: none;
+    }
+    .cart-header__text {
+        display: none;
+    }
+    .cart-header__backet::before {
+        font-size: 25px;
+    }
+}

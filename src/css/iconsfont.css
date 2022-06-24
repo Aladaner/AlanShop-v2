@@ -40,3 +40,6 @@
 ._icon-user:before {
   content: "\e904";
 }
+._icon-arrow:before {
+  content: "\ea50";
+}

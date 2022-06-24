@@ -1,21 +1,27 @@
 @import "config";
+
 //===============================================================================================================
 .header {
     position: relative;
     z-index: 1000;
+
     &__top {
-        background-color: $MainColor;       
+        background-color: $MainColor;
     }
+
     &__body {
         background-color: $MainWhiteColor;
     }
+
     &__catalog {
         background-color: $MainColor;
     }
 }
+
 //===============================================================================================================
 .top-header {
     padding: 10px 40px;
+
     &__container {
         max-width: 1400px;
         min-height: 50px;
@@ -25,16 +31,20 @@
         align-items: center;
         gap: 20px;
     }
+
     &__menu {
         flex: 1 1 auto;
     }
+
     &__user {
-        color: #fff;
+        color: $WhiteColor;
         display: inline-flex;
         align-items: center;
+
         &::before {
             margin-right: 15px;
         }
+
         &:hover {
             color: $light-green;
         }
@@ -43,27 +53,31 @@
 
 .menu {
     &__body {}
+
     &__list {
         display: flex;
         flex-wrap: wrap;
         row-gap: 5px;
         gap: 60px;
     }
-    &__item {
-        width: 100px;
-    }
+
+    &__item {}
+
     &__link {
         font-size: 16px;
-        color: #fff;
+        color: $WhiteColor;
         line-height: 20px;
+
         &:hover {
             color: $light-green;
         }
     }
 }
+
 //===============================================================================================================
 .body-header {
     padding: 10px 40px;
+
     &__container {
         max-width: 1400px;
         width: 100%;
@@ -74,22 +88,27 @@
         gap: 30px;
         align-items: center;
     }
+
     &__logo {
         height: 100px;
     }
+
     &__search {}
+
     &__location {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
     }
+
     &__phone {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     &__cart {
         display: flex;
         justify-content: center;
@@ -102,6 +121,7 @@
     border-radius: 3px;
     border: 1px solid rgba(4, 4, 4, 0.5);
     position: relative;
+
     &__button {
         position: absolute;
         background-color: transparent;
@@ -114,12 +134,14 @@
         align-items: center;
         font-size: 18px;
     }
+
     &__input {
         background-color: transparent;
         border-radius: 3px;
         height: 40px;
         padding: 0px 20px 0px 50px;
         color: $MainColor;
+
         &::placeholder {
             color: rgba(0, 0, 0, 0.5);
         }
@@ -141,25 +163,30 @@
 }
 
 .cart-header {
-    &__backet {   
+    &__backet {
         background-color: transparent;
+
         &::before {
             font-size: 18px;
             padding: 0 10px;
         }
     }
 }
+
 //===============================================================================================================
 .catalog-header {
     padding: 10px 40px;
+
     &__container {
         max-width: 1400px;
         min-height: 50px;
         width: 100%;
         margin: 0 auto;
+        display: grid;
+        align-items: center;
     }
-    &__menu {}
 
+    &__menu {}
 }
 
 .menu-catalog {
@@ -171,70 +198,127 @@
         position: relative;
         width: 100%;
     }
+
     &__item {
-        width: 250px;
-        &:hover {
-            .sub-menu {
-                display: flex;
-            } 
-        }
-    }
-    &__link {
-        color: #fff;
-        padding: 0 10px;
-        min-height: 70px;
         display: flex;
-        justify-content: center;
         align-items: center;
-        text-align: center;
+        justify-content: center;
+        position: relative;
+        margin: 0 auto;
+        min-height: 50px;
+    }
+
+    &__link {
+        color: $WhiteColor;
+        padding: 0 10px;
+
         &:hover {
-            color: $light-green;           
+            color: $light-green;
         }
     }
 }
 
 .sub-menu {
-    display: none; 
+    // display: none;
     flex-direction: column;
     position: absolute;
-    width: 250px;
-    z-index: 1;
+    top: 100%;
+    // transform: translate(0px, 10%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
     background-color: $MainColor;
+
     &__list {
-        padding: 10px 0;
+        padding: 10px 5px;
         text-align: center;
     }
+
     &__link {
-        color: #fff;
+        color: $WhiteColor;
+
         &:hover {
-            color: $light-green;            
+            color: $light-green;
         }
     }
 }
 
 //===============================================================================================================
-@media (max-width: 1024px) {
-    .location-header {
-        display: none;
-    }
-    .phone-header {
-        display: none;
-    }
-    .search-header__input {
-        min-width: 300px;
-    }
-    .menu-catalog {
-        &__list {}
-        &__item {
-            width: 170.8px;
+.pc {
+    .menu-catalog__item:hover {
+        .sub-menu {
+            display: flex;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+            transform: translate(0px, 0px);
         }
-        &__link {}
     }
-    .sub-menu {
-        width: 172.797px;
-        transform: translate(0px, 5%);
-        transition: all 0.3s ease 0s;
-        &__list {}
-        &__link {}
+
+    .arrow {
+        display: none;
     }
 }
+
+.touch {
+    .arrow {
+        display: block;
+        width: 0;
+        height: 0;
+        margin: 0px 0px 0px 5px;
+        transition: transform 0.3s ease 0s;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid $WhiteColor;
+    }
+
+    .active {
+        .sub-menu {
+            display: flex;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+            transform: translate(0px, 3%);
+        }
+
+        .arrow {
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+//===============================================================================================================
+// @media (max-width: 1024px) {
+//     .location-header {
+//         display: none;
+//     }
+
+//     .phone-header {
+//         display: none;
+//     }
+
+//     .search-header__input {
+//         min-width: 300px;
+//     }
+
+//     .menu-catalog {
+//         &__list {}
+
+//         &__item {
+//             width: 170.8px;
+//         }
+
+//         &__link {}
+//     }
+
+//     .sub-menu {
+//         width: 172.797px;
+//         transform: translate(0px, 5%);
+//         transition: all 0.3s ease 0s;
+
+//         &__list {}
+
+//         &__link {}
+//     }
+// }

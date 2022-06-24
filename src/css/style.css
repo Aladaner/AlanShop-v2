@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1 1 auto;
 }
 .top-header__user {
-  color: #fff;
+  color: #FFFFFF;
   display: inline-flex;
   align-items: center;
 }
@@ -120,12 +120,9 @@ h1, h2, h3, h4, h5, h6 {
   row-gap: 5px;
   gap: 60px;
 }
-.menu__item {
-  width: 100px;
-}
 .menu__link {
   font-size: 16px;
-  color: #fff;
+  color: #FFFFFF;
   line-height: 20px;
 }
 .menu__link:hover {
@@ -221,6 +218,8 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 50px;
   width: 100%;
   margin: 0 auto;
+  display: grid;
+  align-items: center;
 }
 .menu-catalog__list {
   display: flex;
@@ -231,65 +230,74 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 .menu-catalog__item {
-  width: 250px;
-}
-.menu-catalog__item:hover .sub-menu {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  min-height: 50px;
 }
 .menu-catalog__link {
-  color: #fff;
+  color: #FFFFFF;
   padding: 0 10px;
-  min-height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 .menu-catalog__link:hover {
   color: #00b96b;
 }
 
 .sub-menu {
-  display: none;
   flex-direction: column;
   position: absolute;
-  width: 250px;
-  z-index: 1;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease 0s;
   background-color: #141414;
 }
 .sub-menu__list {
-  padding: 10px 0;
+  padding: 10px 5px;
   text-align: center;
 }
 .sub-menu__link {
-  color: #fff;
+  color: #FFFFFF;
 }
 .sub-menu__link:hover {
   color: #00b96b;
 }
 
-@media (max-width: 1024px) {
-  .location-header {
-    display: none;
-  }
-
-  .phone-header {
-    display: none;
-  }
-
-  .search-header__input {
-    min-width: 300px;
-  }
-
-  .menu-catalog__item {
-    width: 170.8px;
-  }
-  .sub-menu {
-    width: 172.797px;
-    transform: translate(0px, 5%);
-    transition: all 0.3s ease 0s;
-  }
+.pc .menu-catalog__item:hover .sub-menu {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transform: translate(0px, 0px);
 }
+.pc .arrow {
+  display: none;
+}
+
+.touch .arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 0px 0px 0px 5px;
+  transition: transform 0.3s ease 0s;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #FFFFFF;
+}
+.touch .active .sub-menu {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transform: translate(0px, 3%);
+}
+.touch .active .arrow {
+  transform: rotate(-180deg);
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }

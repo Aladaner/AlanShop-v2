@@ -6,10 +6,12 @@
 @import "components/header";
 
 @import "media-request/notebook";
-
-@import "pc";
-@import "touch";
+@import "media-request/tablet";
+@import "media-request/mobile";
 
 body {
     font-family: 'Montserrat', sans-serif;
+}
+.lock {
+    overflow: hidden;
 }

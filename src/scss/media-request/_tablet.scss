@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+    .location-header {
+        display: none;
+    }
+
+    .phone-header {
+        display: none;
+    }
+
+    .top-header__text {
+        display: none;
+    }
+
+    .top-header__user::before {
+        font-size: 25px;
+    }
+
+    .cart-header__backet::before {
+        font-size: 25px;
+    }
+
+    .menu-catalog__link {
+        padding: 0px;
+    }
+
+    .touch {
+        .arrow {
+            display: block;
+            width: 0;
+            height: 0;
+            margin: 0px 0px 0px 5px;
+            transition: transform 0.3s ease 0s;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 10px solid $WhiteColor;
+        }
+
+        .subActive {
+            .sub-menu {
+                display: block;
+                opacity: 1;
+                visibility: visible;
+                pointer-events: all;
+                transform: translate(0px, 3%);
+            }
+
+            .arrow {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+}

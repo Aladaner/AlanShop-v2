@@ -1,0 +1,152 @@
+@media (max-width: 425px) {
+    .header__top {
+        display: none;
+    }
+    .body-header {
+        &__logo {
+            position: relative;
+            z-index: 5;
+            height: 40px;
+        }
+        &::before {
+            content: "";
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 62px;
+            background-color: inherit;
+            z-index: 2;
+        }
+    }
+
+    .search-header {
+        position: relative;
+        z-index: 5;
+        width: 150px;
+
+        &__input {
+            width: 150px;
+        }
+    }
+
+    .cart-header {
+        display: none;
+    }
+
+    //===============================================================================================================
+    .burger-menu {
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+
+        span,
+        &::before,
+        &::after {
+            left: 0;
+            position: absolute;
+            height: 10%;
+            width: 100%;
+            transition: all 0.3s ease 0s;
+            background-color: $MainColor;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+
+        span {
+            top: 50%;
+            transform: scale(1) translate(0px, -50%);
+        }
+
+        
+    }
+
+    .burgerActive {
+        span {
+            transform: scale(0) translate(0px, -50%);
+        }
+        &::before {
+            top: 50%;
+            transform: rotate(-45deg) translate(0px, -50%);
+        }
+        &::after {
+            bottom: 50%;
+            transform: rotate(45deg) translate(0px, 50%);
+        }
+    }
+
+    .catalog-header {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 100px 30px 30px 30px;
+        transition: left 0.3s ease 0s;
+        overflow: auto;
+
+        
+    }
+    .burgerActive {
+        left: 0;
+    }
+    .menu-catalog {
+        &__list {
+        }
+
+        &__item {
+            width: 100%;
+            margin: 0px 0px 30px 0px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__link {
+            font-size: 24px;
+        }
+
+        .subActive {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+            transform: translate(0px, 3%);
+        }
+        .arrow {
+            border-width: 15px 10px 0 10px;
+        }
+
+        .sub-menu {
+            position: relative;
+            background-color: $WhiteColor;
+            flex: 1 1 100%;
+            display: none;
+            margin: 20px 0px 0px 0px;
+            &__list {
+                text-align: left;
+            }
+
+            &__link {
+                font-size: 20px;
+                color: $MainColor;
+            }
+        }
+    }
+}

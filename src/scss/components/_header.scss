@@ -14,7 +14,11 @@
         background-color: $MainColor;
     }
 }
-
+//===============================================================================================================
+//DELETE
+p {
+    padding: 20px;
+}
 //===============================================================================================================
 .top-header {
     padding: 10px 40px;
@@ -90,7 +94,9 @@
         height: 100px;
     }
 
-    &__search {}
+    &__search {
+        width: 100%;
+    }
 
     &__location {
         display: flex;
@@ -111,6 +117,7 @@
         justify-content: center;
         align-items: center;
     }
+
     &__burger {
         display: none;
     }
@@ -121,6 +128,7 @@
     border-radius: 3px;
     border: 1px solid rgba(4, 4, 4, 0.5);
     position: relative;
+    z-index: 5;
 
     &__button {
         position: absolute;
@@ -149,6 +157,9 @@
 }
 
 .location-header {
+    z-index: 5;
+    width: 100%;
+
     &__link {
         color: rgba(0, 0, 0, 0.5);
         padding: 4px;
@@ -156,6 +167,9 @@
 }
 
 .phone-header {
+    z-index: 5;
+    width: 100%;
+
     &__link {
         color: rgba(0, 0, 0, 0.5);
         padding: 2px;
@@ -170,6 +184,10 @@
             font-size: 18px;
             padding: 0 10px;
         }
+    }
+
+    &__text {
+        color: $MainColor;
     }
 }
 
@@ -219,6 +237,17 @@
     }
 }
 
+.pc {
+    .menu-catalog__item:hover {
+        .sub-menu {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+    }
+}
+
 .sub-menu {
     flex-direction: column;
     position: absolute;
@@ -229,6 +258,7 @@
     transition: all 0.3s ease 0s;
     background-color: $MainColor;
     z-index: 5;
+
     &__list {
         padding: 10px 5px;
         text-align: center;

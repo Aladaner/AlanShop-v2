@@ -1,10 +1,19 @@
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
+
+    //===============================================================================================================
+    //HEADER
+    .body-header {
+        padding: 10px 30px;
+
+        &__logo {
+            height: 80px;
+        }
+    }
+
     .location-header {
-        display: none;
+        display: flex;
     }
-    .cart-header__text {
-        display: none;
-    }
+
     .cart-header__backet::before {
         font-size: 25px;
     }

@@ -1,10 +1,21 @@
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    //===============================================================================================================
+    //HEADER
+    .body-header {
+        padding: 10px 20px;
+
+        &__logo {
+            height: 60px;
+        }
+    }
+
     .location-header {
         display: none;
     }
 
     .phone-header {
-        display: none;
+        display: flex;
     }
 
     .top-header__text {
@@ -37,7 +48,6 @@
 
         .subActive {
             .sub-menu {
-                display: block;
                 opacity: 1;
                 visibility: visible;
                 pointer-events: all;

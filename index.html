@@ -8,9 +8,8 @@
     <title>Alan Shop v2</title>
     <!--Стили-->
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/slider.css">
     <link rel="stylesheet" href="src/css/iconsfont.css">
-    <!--Скрипты-->
-
 </head>
 
 <body>
@@ -86,55 +85,53 @@
                         <li class="menu-catalog__item"><a href="" class="menu-catalog__link">Категория 3</a></li>
                         <li class="menu-catalog__item"><a href="" class="menu-catalog__link">Категория 4</a></li>
                         <li class="menu-catalog__item"><a href="" class="menu-catalog__link">Категория 5</a></li>
+                        <li class="menu-catalog__item touch-device">
+                            <a href="" class="menu-catalog__link">Информация</a>
+                            <span class="arrow"></span>
+                            <ul class="sub-menu touch-device">
+                                <li class="sub-menu__list"><a href="" class="sub-menu__link">О нас</a></li>
+                                <li class="sub-menu__list"><a href="" class="sub-menu__link">Оплата и доставка</a></li>
+                                <li class="sub-menu__list"><a href="" class="sub-menu__link">Новости</a></li>
+                                <li class="sub-menu__list"><a href="" class="sub-menu__link">Контакты</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <script src="/src/js/script.js"></script>
+    
+    <main class="main">
+        <div class="main__container">
+            <!--Слайдер-->
+            <div class="slider">
+                <div class="slider__item">
+                    <img src="/src/img/slider/Adobe_After_Effects.png" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="/src/img/slider/Adobe_Audition_1.png" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="/src/img/slider/Adobe_Photoshop.png" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="/src/img/slider/Adobe_Premiere_Pro_1.png" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="/src/img/slider/Aida64.png" alt="">
+                </div>
+            </div>
 
-    <section>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-    </section>
+        </div>
+    </main>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--Слайдер Slick-->
+    <script src="/src/js/slick.min.js"></script>
+    <!--Скрипты-->
+    <script src="/src/js/script.js"></script>
+    <script src="/src/js/slider-settings.js"></script>
 </body>
 
 </html>

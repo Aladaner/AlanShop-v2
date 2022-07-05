@@ -172,6 +172,11 @@
             opacity: 1;
             visibility: visible;
             pointer-events: all;
+
+            &__link {
+                font-size: 20px;
+                color: $MainColor;
+            }
         }
 
         .arrow {
@@ -179,4 +184,9 @@
         }
     }
 
+    .touch-device {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
 }

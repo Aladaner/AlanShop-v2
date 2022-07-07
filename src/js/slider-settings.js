@@ -4,6 +4,7 @@ $(document).ready(function () {
         dots: true,
         adaptiveHeight: true,
         slidesToShow: 1,
-        autoplay: true
+        autoplay: true,
+        
     });
 })

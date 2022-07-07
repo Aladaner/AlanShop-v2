@@ -142,7 +142,7 @@
             background-color: $WhiteColor;
             flex: 1 1 100%;
             display: none;
-            margin: 20px 0px 0px 0px;
+            margin: 20px 0px 0px 10px;
 
             &__list {
                 text-align: left;
@@ -185,6 +185,7 @@
     }
 
     .touch-device {
+        display: flex;
         opacity: 1;
         visibility: visible;
         pointer-events: all;

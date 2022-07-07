@@ -298,6 +298,7 @@ p {
 }
 
 .touch-device {
+  display: none;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -496,7 +497,7 @@ p {
     background-color: #FFFFFF;
     flex: 1 1 100%;
     display: none;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0px 0px 10px;
   }
   .menu-catalog .sub-menu__list {
     text-align: left;
@@ -532,6 +533,7 @@ p {
   }
 
   .touch-device {
+    display: flex;
     opacity: 1;
     visibility: visible;
     pointer-events: all;

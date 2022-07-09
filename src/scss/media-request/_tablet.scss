@@ -30,8 +30,11 @@
         font-size: 25px;
     }
 
-    .menu-catalog__link {
-        padding: 0px;
+    .menu-catalog {
+        &__item {}
+        &__link {
+            padding: 0px;
+        }
     }
 
     .touch {

@@ -339,6 +339,9 @@ p {
   color: #FFFFFF;
   line-height: 30px;
 }
+.product-cart__btn:hover {
+  background-color: #00b96b;
+}
 .product-cart__btn span {
   display: flex;
   flex-direction: row-reverse;

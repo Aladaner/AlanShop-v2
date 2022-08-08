@@ -309,7 +309,7 @@ p {
   margin: 0 auto;
 }
 
-.product-cart__title {
+.product-cart__title, .news__title {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
@@ -317,18 +317,18 @@ p {
   align-items: baseline;
   padding: 0 10px;
 }
-.product-cart__title h2 {
+.product-cart__title h2, .news__title h2 {
   font-size: 20px;
   font-weight: 700;
 }
-.product-cart__title h3 {
+.product-cart__title h3, .news__title h3 {
   font-size: 15px;
   font-weight: 500;
 }
-.product-cart__title h3 a:hover {
+.product-cart__title h3 a:hover, .news__title h3 a:hover {
   color: #00b96b;
 }
-.product-cart__grid {
+.product-cart__grid, .news__grid {
   display: flex;
   margin-top: 40px;
   flex-wrap: wrap;
@@ -338,6 +338,7 @@ p {
   background-color: #E8AA31;
   color: #FFFFFF;
   line-height: 30px;
+  border-radius: 10px;
 }
 .product-cart__btn:hover {
   background-color: #00b96b;
@@ -355,6 +356,7 @@ p {
 
 .cell {
   margin: 20px;
+  border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .cell__inner {
@@ -364,6 +366,7 @@ p {
 .cell__picture {
   text-align: center;
   padding: 15px;
+  width: 100%;
 }
 .cell__title {
   margin: 10px 0;
@@ -399,6 +402,16 @@ p {
 }
 .cell__favourite:hover {
   color: #E8AA31;
+}
+
+.news .cell__date {
+  padding: 0 10px;
+  font-size: 13px;
+  color: #808080;
+  font-weight: 700;
+}
+.news .cell__picture {
+  padding: 10px 0;
 }
 
 @media (min-width: 1024px) {
@@ -610,11 +623,16 @@ p {
     visibility: visible;
     pointer-events: all;
   }
-  .product-cart__title {
+  .product-cart__title, .news__title {
     margin-top: 30px;
   }
-  .product-cart__grid {
+  .product-cart__grid, .news__grid {
     margin-top: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .body-header__logo {
+    display: none;
   }
 }
 body {

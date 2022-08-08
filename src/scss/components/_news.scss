@@ -1,0 +1,21 @@
+.news {
+    &__title {
+        @extend .product-cart__title;
+    }
+
+    &__grid {
+        @extend .product-cart__grid;
+    }
+    
+    .cell {
+        &__date {
+            padding: 0 10px;
+            font-size: 13px;
+            color: $gray;
+            font-weight: 700;
+        }
+        &__picture {
+            padding: 10px 0;
+        }
+    }
+}

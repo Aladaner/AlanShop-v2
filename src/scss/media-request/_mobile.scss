@@ -207,3 +207,11 @@
 
     }
 }
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .body-header {
+        &__logo {
+            display: none;
+        }
+    }
+}

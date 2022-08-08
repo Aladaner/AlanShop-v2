@@ -43,6 +43,7 @@
         background-color: $MainOrange;
         color: $WhiteColor;
         line-height: 30px;
+        border-radius: 10px;
         &:hover {
             background-color: $light-green;
         }
@@ -61,6 +62,7 @@
 
 .cell {
     margin: 20px;
+    border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     // .cell__inner
 
@@ -74,6 +76,7 @@
     &__picture {
         text-align: center;
         padding: 15px;
+        width: 100%;
     }
 
     // .cell__title

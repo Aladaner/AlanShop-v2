@@ -8,6 +8,7 @@
     }
     
     .cell {
+        width: 25%;
         &__date {
             padding: 0 10px;
             font-size: 13px;
@@ -15,7 +16,7 @@
             font-weight: 700;
         }
         &__picture {
-            padding: 10px 0;
+            padding: 10px 10px;
         }
     }
 }

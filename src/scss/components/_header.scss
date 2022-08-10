@@ -163,6 +163,10 @@ p {
     &__link {
         color: rgba(0, 0, 0, 0.5);
         padding: 4px;
+        
+        &:hover {
+            color: $MainColor;
+        }
     }
 }
 
@@ -173,6 +177,10 @@ p {
     &__link {
         color: rgba(0, 0, 0, 0.5);
         padding: 2px;
+
+        &:hover {
+            color: $MainColor;
+        }
     }
 }
 
@@ -187,7 +195,10 @@ p {
     }
 
     &__text {
-        color: $MainColor;
+        color: $gray;
+        &:hover {
+            color: $MainColor;
+        }
     }
 }
 

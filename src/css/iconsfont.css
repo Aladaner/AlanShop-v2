@@ -10,7 +10,7 @@
   font-display: block;
 }
 
-[class^="_icon-"]::before, [class*=" _icon-"]::before {
+[class^="_icon-"], [class*=" _icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -28,6 +28,14 @@
 ._icon-comparison:before {
   content: "\e905";
 }
+._icon-ks:before {
+  content: "\e906";
+  color: #41a6e4;
+}
+._icon-li:before {
+  content: "\e907";
+  color: #f2ca30;
+}
 ._icon-backet:before {
   content: "\e900";
 }
@@ -43,6 +51,15 @@
 ._icon-user:before {
   content: "\e904";
 }
-._icon-arrow:before {
-  content: "\ea50";
+._icon-arrow-up:before {
+  content: "\ea3a";
+}
+._icon-facebook:before {
+  content: "\ea91";
+}
+._icon-instagram:before {
+  content: "\ea92";
+}
+._icon-telegram:before {
+  content: "\ea95";
 }

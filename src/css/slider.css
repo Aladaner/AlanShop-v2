@@ -19,6 +19,9 @@
     position: relative;
 }
 
+.main-banner {
+    margin-top: 250px;
+}
 .main-banner .slider__item {
     text-align: center;
 }

@@ -681,6 +681,7 @@ h1, h2, h3, h4, h5, h6 {
     flex: 1 1 100%;
     display: none;
     margin: 20px 0px 0px 10px;
+    border-radius: 10px;
   }
   .menu-catalog .sub-menu__list {
     text-align: left;
@@ -725,7 +726,20 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
   }
 }
+.footer__contacts a {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #button {
+    bottom: 50px !important;
+    right: 0 !important;
+  }
+}
 @media (min-width: 320px) and (max-width: 425px) {
+  #button {
+    bottom: 50px !important;
+  }
   .body-header__logo {
     display: none;
   }
@@ -734,6 +748,22 @@ h1, h2, h3, h4, h5, h6 {
   }
   .product-cart__title h3, .news__title h3 {
     font-size: 12px;
+  }
+  .footer {
+    background-color: #ECF1F2;
+  }
+  .footer__top {
+    flex-direction: column;
+  }
+  .footer__col {
+    width: 100%;
+    margin: 0;
+  }
+  .footer__title :first-child {
+    margin-top: 5px;
+  }
+  .footer__contacts a {
+    font-size: 16px;
   }
 }
 body {

@@ -201,6 +201,7 @@
         &__title {
             margin-top: 30px;
         }
+
         &__grid {
             margin-top: 20px;
         }
@@ -213,5 +214,15 @@
         &__logo {
             display: none;
         }
+    }
+
+    .product-cart__title { 
+            h2 {
+                font-size: 16px;
+            }
+            
+            h3 {
+                font-size: 14px;
+            }
     }
 }

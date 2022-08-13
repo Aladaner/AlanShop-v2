@@ -75,12 +75,13 @@
 
     &__social {
         display: flex;
-        justify-content: space-evenly;
+        
         font-size: 40px;
         margin-top: 10px;
 
         a {
             color: $gray;
+            padding: 10px;
 
             &:hover {
                 transition: all 0.3s ease-in-out;

@@ -282,5 +282,10 @@
 
         &__social {}
     }
+}
 
+@media (max-width: 500px) {
+    .footer__top {
+        flex-direction: column;
+    }
 }

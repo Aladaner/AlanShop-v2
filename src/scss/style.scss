@@ -3,16 +3,20 @@
 @import "base/nullstyle";
 @import "base/config";
 
+// Pages module
 @import "components/header";
 @import "components/main";
 @import "components/product-cart";
 @import "components/news";
 @import "components/footer";
 
+// Adaptive
 @import "media-request/notebook";
 @import "media-request/tablet";
 @import "media-request/mobile";
 
+// Pages
+@import "pages/about";
 body {
     font-family: 'Montserrat', sans-serif;
 }

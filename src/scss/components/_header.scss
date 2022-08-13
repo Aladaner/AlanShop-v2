@@ -167,6 +167,10 @@
         &:hover {
             color: $MainColor;
         }
+
+        &::before {
+            padding-right: 10px;
+        }
     }
 }
 
@@ -217,7 +221,6 @@
         width: 100%;
         margin: 0 auto;
         display: grid;
-        align-items: center;
     }
 
     &__menu {}

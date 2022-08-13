@@ -24,6 +24,15 @@ const isMobile = {
         );
     }
 };
+
+// Header for mobile device
+var headerMobile = $('.header__mobile');
+
+if (isMobile.any()) {
+    headerMobile.addClass('touch');
+} else {
+    headerMobile.addClass('pc')
+}
 // SubMenu
 if (isMobile.any()) {
     document.body.classList.add('touch');

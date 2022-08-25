@@ -786,10 +786,25 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 250px;
 }
 
+@media (max-width: 425px) {
+  .info:first-child {
+    margin-top: 110px;
+  }
+}
+@media (max-width: 768px) {
+  .info:first-child {
+    margin-top: 150px;
+  }
+}
 body {
   font-family: "Montserrat", sans-serif;
 }
 
 .lock {
   overflow: hidden;
+}
+
+.created {
+  font-size: 12px;
+  text-align: center;
 }

@@ -17,10 +17,16 @@
 
 // Pages
 @import "pages/about";
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
 .lock {
     overflow: hidden;
+}
+
+.created {
+    font-size: 12px;
+    text-align: center;
 }

@@ -752,9 +752,6 @@ h1, h2, h3, h4, h5, h6 {
   .product-cart__title h3, .news__title h3 {
     font-size: 12px;
   }
-  .footer {
-    background-color: #ECF1F2;
-  }
   .footer__top {
     flex-direction: column;
   }
@@ -772,28 +769,6 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 500px) {
   .footer__top {
     flex-direction: column;
-  }
-}
-.info {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.info:first-child {
-  margin-top: 250px;
-}
-
-@media (max-width: 425px) {
-  .info:first-child {
-    margin-top: 110px;
-  }
-}
-@media (max-width: 768px) {
-  .info:first-child {
-    margin-top: 150px;
   }
 }
 body {

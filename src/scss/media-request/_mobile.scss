@@ -202,6 +202,10 @@
         }
 
     }
+
+    .news__list {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -281,6 +285,10 @@
         // .footer__social
 
         &__social {}
+    }
+
+    .news__list {
+        grid-template-columns: 1fr;
     }
 }
 

@@ -7,6 +7,11 @@
         @extend .product-cart__grid;
     }
     
+    &__list {
+        margin-top: 250px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     .cell {
         width: 25%;
         &__date {
@@ -18,5 +23,17 @@
         &__picture {
             padding: 10px 10px;
         }
+    }
+}
+
+@media (max-width: 425px) {
+    .news__list {
+        margin-top: 110px;
+    }
+}
+
+@media (max-width: 768px) {
+    .news__list {
+        margin-top: 150px;
     }
 }

@@ -26,14 +26,15 @@
     }
 }
 
+@media (max-width: 767px) {
+    .news__list {
+        margin-top: 150px;
+    }
+}
+
 @media (max-width: 425px) {
     .news__list {
         margin-top: 110px;
     }
 }
 
-@media (max-width: 768px) {
-    .news__list {
-        margin-top: 150px;
-    }
-}

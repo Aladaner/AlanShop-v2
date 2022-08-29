@@ -171,6 +171,17 @@
         &::before {
             padding-right: 10px;
         }
+
+        &--contacts {
+            font-size: 30px;
+            font-weight: 700;
+            color: $MainColor;
+            margin: 15px;
+
+            &:hover {
+                color: $gray;
+            }
+        }
     }
 }
 

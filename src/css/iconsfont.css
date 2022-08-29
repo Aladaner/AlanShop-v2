@@ -25,16 +25,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+._icon-time:before {
+  content: "\e908";
+}
+._icon-mail:before {
+  content: "\e909";
+}
 ._icon-comparison:before {
   content: "\e905";
 }
 ._icon-ks:before {
   content: "\e906";
-  color: #41a6e4;
 }
 ._icon-li:before {
   content: "\e907";
-  color: #f2ca30;
 }
 ._icon-backet:before {
   content: "\e900";

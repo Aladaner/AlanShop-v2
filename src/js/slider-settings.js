@@ -4,7 +4,7 @@ $(document).ready(function () {
         dots: true,
         adaptiveHeight: true,
         slidesToShow: 1,
-        autoplay: false,
+        autoplay: true,
         responsive: [
             {
                 breakpoint: 1024,

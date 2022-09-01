@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/src/css/iconsfont.css">
     <link rel="stylesheet" href="/src/css/rating-star.css">
     <link rel="stylesheet" href="/src/css/topButton.css">
+    <link rel="stylesheet" href="/src/css/popup.css">
 
 
 </head>
@@ -21,16 +22,17 @@
     <a id="button" class="_icon-arrow-up"></a>
 
     <!-- Header-->
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__top top-header">
             <div class="top-header__container">
-                
+
                 <!-- Блок меню-->
                 <div class="top-header__menu menu">
                     <nav class="menu__body">
                         <ul class="menu__list">
                             <li class="menu__item"><a href="/pages/about.html" class="menu__link">О нас</a></li>
-                            <li class="menu__item"><a href="/pages/delivery.html" class="menu__link">Оплата и доставка</a></li>
+                            <li class="menu__item"><a href="/pages/delivery.html" class="menu__link">Оплата и
+                                    доставка</a></li>
                             <li class="menu__item"><a href="/pages/news.html" class="menu__link">Новости</a></li>
                             <li class="menu__item"><a href="/pages/contacts.html" class="menu__link">Контакты</a></li>
                         </ul>
@@ -38,7 +40,7 @@
                 </div>
 
                 <!-- Личный кабинет-->
-                <a href="" class="top-header__user _icon-user"><span class="top-header__text">Личный кабинет</span></a>
+                <a href="#popup" class="top-header__user _icon-user popup-link"><span class="top-header__text">Личный кабинет</span></a>
             </div>
         </div>
 
@@ -56,7 +58,8 @@
 
                 <!-- Блок местоположений-->
                 <div class="body-header__location location-header">
-                    <a href="" target="_blank" class="location-header__link _icon-location">Київ, вул Кондукторська, 39</a>
+                    <a href="" target="_blank" class="location-header__link _icon-location">Київ, вул Кондукторська,
+                        39</a>
                     <a href="" target="_blank" class="location-header__link _icon-location">Київ, вул Ямська, 22</a>
                 </div>
 
@@ -76,7 +79,7 @@
 
         <div class="header__catalog catalog-header">
             <div class="catalog-header__container">
-                
+
                 <!-- Блок меню-->
                 <nav class="catalog-header__menu menu-catalog">
                     <ul class="menu-catalog__list">
@@ -113,10 +116,14 @@
                             <a href="" class="menu-catalog__link">Информация</a>
                             <span class="arrow"></span>
                             <ul class="sub-menu touch-device">
-                                <li class="sub-menu__list"><a href="/pages/about.html" class="sub-menu__link">О нас</a></li>
-                                <li class="sub-menu__list"><a href="/pages/delivery.html" class="sub-menu__link">Оплата и доставка</a></li>
-                                <li class="sub-menu__list"><a href="/pages/news.html" class="sub-menu__link">Новости</a></li>
-                                <li class="sub-menu__list"><a href="/pages/contacts.html" class="sub-menu__link">Контакты</a></li>
+                                <li class="sub-menu__list"><a href="/pages/about.html" class="sub-menu__link">О нас</a>
+                                </li>
+                                <li class="sub-menu__list"><a href="/pages/delivery.html" class="sub-menu__link">Оплата
+                                        и доставка</a></li>
+                                <li class="sub-menu__list"><a href="/pages/news.html" class="sub-menu__link">Новости</a>
+                                </li>
+                                <li class="sub-menu__list"><a href="/pages/contacts.html"
+                                        class="sub-menu__link">Контакты</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -126,10 +133,9 @@
 
         <!-- Header for mobile device-->
         <div class="header__mobile mobile-header">
-
             <div class="mobile-header__container">
                 <a href="/index.html"><img src="/src/img/logo-dark.png" class="body-header__logo" alt=""></a>
-                <a href="" class="top-header__user _icon-user"><span class="top-header__text">Личный кабинет</span></a>
+                <a href="#popup" class="top-header__user _icon-user popup-link"><span class="top-header__text">Личный кабинет</span></a>
                 <a href="" class="cart-header__backet _icon-backet"><span class="cart-header__text">Корзина</span></a>
                 <div class="body-header__burger burger-menu">
                     <span></span>
@@ -850,7 +856,8 @@
                 <div class="footer__contacts">
                     <a href="tel:+380000000000" class="phone-header__link _icon-ks">(000) 000-00-00</a>
                     <a href="tel:+380000000000" class="phone-header__link _icon-li">(000) 000-00-00</a>
-                    <a href="" target="_blank" class="location-header__link _icon-location">Київ, вул Кондукторська, 39</a>
+                    <a href="" target="_blank" class="location-header__link _icon-location">Київ, вул Кондукторська,
+                        39</a>
                     <a href="" target="_blank" class="location-header__link _icon-location">Київ, вул Ямська, 22</a>
                 </div>
 
@@ -870,6 +877,30 @@
         <div class="created">Сайт сделано <a href="https://github.com/Aladaner" target="_blank">Aladaner</a>.</div>`
     </footer>
 
+    <!-- Popup-->
+    <div id="popup" class="popup">
+        <!-- <a href="#" class="popup__area"></a> Without JS-->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close close-popup">X</a>
+                <div class="popup__title">Это модальное окно №1</div>
+                <div class="popup__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna dui, volutpat nec urna eget,
+                    mattis venenatis arcu. Maecenas dignissim metus ac varius congue. Cras fermentum pulvinar orci,
+                    at finibus justo. Nulla quis dui vel tortor egestas sollicitudin. Vivamus sollicitudin erat
+                    sollicitudin, sollicitudin libero interdum, laoreet purus. Quisque eu lorem a ex porttitor
+                    sagittis non id ipsum. Aliquam eget dolor nec ipsum elementum consequat id lobortis tortor.
+                    Aenean ac sem bibendum lorem mattis efficitur.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Morbi urna dui, volutpat nec urna eget, mattis venenatis arcu. Maecenas dignissim metus ac
+                    varius congue. Cras fermentum pulvinar orci, at finibus justo. Nulla quis dui vel tortor egestas
+                    sollicitudin. Vivamus sollicitudin erat sollicitudin, sollicitudin libero interdum, laoreet
+                    purus. Quisque eu lorem a ex porttitor sagittis non id ipsum. Aliquam eget dolor nec ipsum
+                    elementum consequat id lobortis tortor. Aenean ac sem bibendum lorem mattis efficitur.
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -879,6 +910,7 @@
     <script src="/src/js/script.js"></script>
     <script src="/src/js/slider-settings.js"></script>
     <script src="/src/js/rating-star.js"></script>
+    <script src="/src/js/popups.js"></script>
 </body>
 
 </html>

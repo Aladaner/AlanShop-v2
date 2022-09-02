@@ -34,12 +34,12 @@ if (popupCloseIcon.length > 0) {
 
 // Функция открытия попапа
 function popupOpen(curentPopup) {
-    if (curentPopup && unlock) {
+    if (curentPopup) {
         const popupActive = document.querySelector('.popup.open');
         if (popupActive) {
             popupClose(popupActive, false);
         } else {
-            // bodyLock();
+            document.body.classList.add('lock');
         }
         curentPopup.classList.add('open');
         curentPopup.addEventListener("click", function (e) {
@@ -53,6 +53,7 @@ function popupOpen(curentPopup) {
 // Функция закрытия попапа
 function popupClose(popupActive, doUnlock = true) {
     popupActive.classList.remove('open');
+    document.body.classList.remove('lock');
     // if (unlock) {
         
     //     if (doUnlock) {

@@ -67,3 +67,9 @@
 ._icon-telegram:before {
   content: "\ea95";
 }
+._icon-google:before {
+  content: "\ea88";
+}
+._icon-twitter:before {
+  content: "\ea96";
+}

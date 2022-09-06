@@ -45,6 +45,10 @@
         &::before {
             margin-right: 10px;
         }
+
+        &:hover {
+            color: $MainColor;
+        }
     }
 
     li {

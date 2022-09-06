@@ -1,0 +1,34 @@
+.social {
+    display: flex;
+    
+    font-size: 40px;
+    margin-top: 10px;
+
+    a {
+        color: $gray;
+        padding: 10px;
+
+        &:hover {
+            transition: all 0.3s ease-in-out;
+
+            ._icon-instagram {
+                color: $instagram;
+            }
+
+            ._icon-facebook {
+                color: $facebook;
+            }
+
+            ._icon-twitter {
+                color: $telegram;
+            }
+            ._icon-telegram {
+                color: $telegram;
+            }
+
+            ._icon-google {
+                color: $google;
+            }
+        }
+    }
+}

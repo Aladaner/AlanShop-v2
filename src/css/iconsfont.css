@@ -73,3 +73,9 @@
 ._icon-twitter:before {
   content: "\ea96";
 }
+._icon-lock:before {
+  content: "\e90a";
+}
+._icon-person:before {
+  content: "\e90b";
+}

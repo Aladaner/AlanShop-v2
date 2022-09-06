@@ -72,35 +72,4 @@
             }
         }
     }
-
-    &__social {
-        display: flex;
-        
-        font-size: 40px;
-        margin-top: 10px;
-
-        a {
-            color: $gray;
-            padding: 10px;
-
-            &:hover {
-                transition: all 0.3s ease-in-out;
-
-                &:first-child {
-                    color: $instagram;
-                }
-
-                &:nth-child(2) {
-                    color: $facebook;
-                }
-
-                &:nth-child(3) {
-                    color: $telegram;
-                }
-                &:nth-child(4) {
-                    color: $telegram;
-                }
-            }
-        }
-    }
 }

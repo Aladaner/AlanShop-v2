@@ -39,7 +39,8 @@
                 </div>
 
                 <!-- Личный кабинет-->
-                <a href="#popup" class="top-header__user _icon-user popup-link"><span class="top-header__text">Личный кабинет</span></a>
+                <a href="#popup" class="top-header__user _icon-user popup-link"><span class="top-header__text">Личный
+                        кабинет</span></a>
             </div>
         </div>
 
@@ -134,7 +135,8 @@
         <div class="header__mobile mobile-header">
             <div class="mobile-header__container">
                 <a href="/index.html"><img src="/src/img/logo-dark.png" class="body-header__logo" alt=""></a>
-                <a href="#popup" class="top-header__user _icon-user popup-link"><span class="top-header__text">Личный кабинет</span></a>
+                <a href="#popup" class="top-header__user _icon-user popup-link"><span class="top-header__text">Личный
+                        кабинет</span></a>
                 <a href="" class="cart-header__backet _icon-backet"><span class="cart-header__text">Корзина</span></a>
                 <div class="body-header__burger burger-menu">
                     <span></span>
@@ -860,7 +862,7 @@
                     <a href="" target="_blank" class="location-header__link _icon-location">Київ, вул Ямська, 22</a>
                 </div>
 
-                <div class="footer__social">
+                <div class="social">
                     <a href="" target="_blank" title="Instagram">
                         <i class="_icon-instagram"></i>
                     </a>
@@ -885,19 +887,61 @@
         <div class="popup__body">
             <div class="popup__content">
                 <a href="#header" class="popup__close close-popup">X</a>
-                <div class="popup__title">Это модальное окно №1</div>
-                <div class="popup__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna dui, volutpat nec urna eget,
-                    mattis venenatis arcu. Maecenas dignissim metus ac varius congue. Cras fermentum pulvinar orci,
-                    at finibus justo. Nulla quis dui vel tortor egestas sollicitudin. Vivamus sollicitudin erat
-                    sollicitudin, sollicitudin libero interdum, laoreet purus. Quisque eu lorem a ex porttitor
-                    sagittis non id ipsum. Aliquam eget dolor nec ipsum elementum consequat id lobortis tortor.
-                    Aenean ac sem bibendum lorem mattis efficitur.Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Morbi urna dui, volutpat nec urna eget, mattis venenatis arcu. Maecenas dignissim metus ac
-                    varius congue. Cras fermentum pulvinar orci, at finibus justo. Nulla quis dui vel tortor egestas
-                    sollicitudin. Vivamus sollicitudin erat sollicitudin, sollicitudin libero interdum, laoreet
-                    purus. Quisque eu lorem a ex porttitor sagittis non id ipsum. Aliquam eget dolor nec ipsum
-                    elementum consequat id lobortis tortor. Aenean ac sem bibendum lorem mattis efficitur.
+
+                <!-- Login Form-->
+                <div class="login-form">
+                    <div class="login-form__container">
+                        <form>
+                            <div class="login-form__inner">
+                                <div class="login-form__title">
+                                    <h2>Login</h2>
+                                    <span>Войдите с помощью:</span>
+                                    <div class="social">
+                                        <a href="" target="_blank" title="Facebook">
+                                            <i class="_icon-facebook"></i>
+                                        </a>
+                                        <a href="" target="_blank" title="Twitter">
+                                            <i class="_icon-twitter"></i>
+                                        </a>
+                                        <a href="" target="_blank" title="Google">
+                                            <i class="_icon-google"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="login-form__or">
+                                    <span>или</span>
+                                </div>
+
+                                <!-- Email-->
+                                <div class="fields fields__input">
+                                    <label class="control-label" for="login">Email</label>
+                                    <input class="control-input" type="email" id="email" placeholder="Type your email."
+                                        required>
+                                </div>
+
+                                <!-- Passsword-->
+                                <div class="fields fields__input">
+                                    <label class="control-label" for="password">Password</label>
+                                    <input class="control-input" type="password" id="password"
+                                        placeholder="Type your password." required>
+                                </div>
+
+                                <!-- Forgot-->
+                                <div class="text-right">
+                                    <a href="#">Forgot password?</a>
+                                </div>
+
+                                <!-- Button-->
+                                <div class="container-login">
+                                    <div class="wrap-login">
+                                        <div class="login-btn"></div>
+                                        <button class="btn-login">Login</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

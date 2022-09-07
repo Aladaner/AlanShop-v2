@@ -20,16 +20,17 @@
     <a id="button" class="_icon-arrow-up"></a>
 
     <!-- Header-->
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__top top-header">
             <div class="top-header__container">
-                
+
                 <!-- Блок меню-->
                 <div class="top-header__menu menu">
                     <nav class="menu__body">
                         <ul class="menu__list">
                             <li class="menu__item"><a href="/pages/about.html" class="menu__link">О нас</a></li>
-                            <li class="menu__item"><a href="/pages/delivery.html" class="menu__link">Оплата и доставка</a></li>
+                            <li class="menu__item"><a href="/pages/delivery.html" class="menu__link">Оплата и
+                                    доставка</a></li>
                             <li class="menu__item"><a href="/pages/news.html" class="menu__link">Новости</a></li>
                             <li class="menu__item"><a href="/pages/contacts.html" class="menu__link">Контакты</a></li>
                         </ul>
@@ -37,7 +38,9 @@
                 </div>
 
                 <!-- Личный кабинет-->
-                <a href="" class="top-header__user _icon-user"><span class="top-header__text">Личный кабинет</span></a>
+                <a href="#log-popup" class="top-header__user _icon-user popup-link"><span
+                        class="top-header__text">Личный
+                        кабинет</span></a>
             </div>
         </div>
 
@@ -55,7 +58,8 @@
 
                 <!-- Блок местоположений-->
                 <div class="body-header__location location-header">
-                    <a href="" target="_blank" class="location-header__link _icon-location">Київ, вул Кондукторська, 39</a>
+                    <a href="" target="_blank" class="location-header__link _icon-location">Київ, вул Кондукторська,
+                        39</a>
                     <a href="" target="_blank" class="location-header__link _icon-location">Київ, вул Ямська, 22</a>
                 </div>
 
@@ -75,7 +79,7 @@
 
         <div class="header__catalog catalog-header">
             <div class="catalog-header__container">
-                
+
                 <!-- Блок меню-->
                 <nav class="catalog-header__menu menu-catalog">
                     <ul class="menu-catalog__list">
@@ -112,10 +116,14 @@
                             <a href="" class="menu-catalog__link">Информация</a>
                             <span class="arrow"></span>
                             <ul class="sub-menu touch-device">
-                                <li class="sub-menu__list"><a href="/pages/about.html" class="sub-menu__link">О нас</a></li>
-                                <li class="sub-menu__list"><a href="/pages/delivery.html" class="sub-menu__link">Оплата и доставка</a></li>
-                                <li class="sub-menu__list"><a href="/pages/news.html" class="sub-menu__link">Новости</a></li>
-                                <li class="sub-menu__list"><a href="/pages/contacts.html" class="sub-menu__link">Контакты</a></li>
+                                <li class="sub-menu__list"><a href="/pages/about.html" class="sub-menu__link">О нас</a>
+                                </li>
+                                <li class="sub-menu__list"><a href="/pages/delivery.html" class="sub-menu__link">Оплата
+                                        и доставка</a></li>
+                                <li class="sub-menu__list"><a href="/pages/news.html" class="sub-menu__link">Новости</a>
+                                </li>
+                                <li class="sub-menu__list"><a href="/pages/contacts.html"
+                                        class="sub-menu__link">Контакты</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -125,10 +133,10 @@
 
         <!-- Header for mobile device-->
         <div class="header__mobile mobile-header">
-
             <div class="mobile-header__container">
                 <a href="/index.html"><img src="/src/img/logo-dark.png" class="body-header__logo" alt=""></a>
-                <a href="" class="top-header__user _icon-user"><span class="top-header__text">Личный кабинет</span></a>
+                <a href="#popup" class="top-header__user _icon-user popup-link"><span class="top-header__text">Личный
+                        кабинет</span></a>
                 <a href="" class="cart-header__backet _icon-backet"><span class="cart-header__text">Корзина</span></a>
                 <div class="body-header__burger burger-menu">
                     <span></span>
@@ -167,7 +175,7 @@
                     </p>
                 </div>
             </section>
-            
+
             <!-- Блок информации-->
             <section class="info">
                 <img src="/src/img/logo-dark.png" class="body-header__logo" alt="">
@@ -215,7 +223,7 @@
                 <div class="news__title">
                     <h2>Наши статьи</h2>
 
-                    <h3><a href="">Перейти в каталог</a></h3>
+                    <h3><a href="/pages/news.html">Перейти в каталог</a></h3>
                 </div>
 
                 <!-- Слайдер новостей-->
@@ -334,6 +342,157 @@
         <div class="created">Сайт сделано <a href="https://github.com/Aladaner" target="_blank">Aladaner</a>.</div>`
     </footer>
 
+    <!-- Login popup-->
+    <div id="log-popup" class="popup">
+        <!-- <a href="#" class="popup__area"></a> Without JS-->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close close-popup">X</a>
+
+                <!-- Login Form-->
+                <div class="form">
+                    <div class="form__container">
+                        <form>
+                            <div class="form__inner">
+                                <div class="form__title">
+                                    <h2>Вход</h2>
+                                    <span>Войдите с помощью:</span>
+                                    <div class="social">
+                                        <a href="" target="_blank" title="Facebook">
+                                            <i class="_icon-facebook"></i>
+                                        </a>
+                                        <a href="" target="_blank" title="Twitter">
+                                            <i class="_icon-twitter"></i>
+                                        </a>
+                                        <a href="" target="_blank" title="Google">
+                                            <i class="_icon-google"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="form__or">
+                                    <span>или</span>
+                                </div>
+
+                                <!-- Email-->
+                                <div class="fields fields__input">
+                                    <label class="control-label" for="login">E-mail</label>
+                                    <input class="control-input" type="email" id="email" placeholder="Введите e-mail."
+                                        required>
+                                </div>
+
+                                <!-- Passsword-->
+                                <div class="fields fields__input">
+                                    <label class="control-label" for="password">Пароль</label>
+                                    <input class="control-input" type="password" id="password"
+                                        placeholder="Введите пароль." required>
+                                </div>
+
+                                <!-- Forgot-->
+                                <div class="text-right">
+                                    <a href="#">Забыл(а) пароль.</a>
+                                </div>
+
+                                <!-- Button-->
+                                <div class="container-login">
+                                    <div class="wrap-login">
+                                        <div class="login-btn"></div>
+                                        <button class="btn-login">Войти</button>
+                                    </div>
+                                </div>
+
+                                <!-- Register-->
+                                <div class="text-center">
+                                    <a href="#register-popup" class="popup-link">Зарегистрироваться</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register popup-->
+    <div id="register-popup" class="popup">
+        <!-- <a href="#" class="popup__area"></a> Without JS-->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close close-popup">X</a>
+
+                <!-- Register Form-->
+                <div class="form">
+                    <div class="form__container">
+                        <form>
+                            <div class="form__inner">
+                                <div class="form__title">
+                                    <h2>Регистрация</h2>
+                                    <span>Войдите с помощью:</span>
+                                    <div class="social">
+                                        <a href="" target="_blank" title="Facebook">
+                                            <i class="_icon-facebook"></i>
+                                        </a>
+                                        <a href="" target="_blank" title="Twitter">
+                                            <i class="_icon-twitter"></i>
+                                        </a>
+                                        <a href="" target="_blank" title="Google">
+                                            <i class="_icon-google"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="form__or">
+                                    <span>или</span>
+                                </div>
+
+                                <!-- Fist name-->
+                                <div class="fields fields__input">
+                                    <label class="control-label" for="fname">Имя</label>
+                                    <input class="control-input" type="text" id="fname" placeholder="Введите имя."
+                                        required>
+                                </div>
+
+                                <!-- Last name-->
+                                <div class="fields fields__input">
+                                    <label class="control-label" for="lname">Фамилия</label>
+                                    <input class="control-input" type="text" id="lname" placeholder="Введите фамилию."
+                                        required>
+                                </div>
+
+                                <!-- Email-->
+                                <div class="fields fields__input">
+                                    <label class="control-label" for="login">E-mail</label>
+                                    <input class="control-input" type="email" id="email" placeholder="Введите e-mail."
+                                        required>
+                                </div>
+
+                                <!-- Passsword-->
+                                <div class="fields fields__input">
+                                    <label class="control-label" for="password">Пароль</label>
+                                    <input class="control-input" type="password" id="password"
+                                        placeholder="Введите пароль." required>
+                                </div>
+
+                                <!-- Button-->
+                                <div class="container-login">
+                                    <div class="wrap-login">
+                                        <div class="login-btn"></div>
+                                        <button class="btn-login">Зарегистрироваться</button>
+                                    </div>
+                                </div>
+
+                                <!-- Register-->
+                                <div class="text-center">
+                                    <a href="#log-popup" class="popup-link">Я уже зарегистрирован.</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -342,6 +501,7 @@
     <!--Скрипты-->
     <script src="/src/js/script.js"></script>
     <script src="/src/js/slider-settings.js"></script>
+    <script src="/src/js/popups.js"></script>
 </body>
 
 </html>

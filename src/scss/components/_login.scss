@@ -1,4 +1,4 @@
-.login-form {
+.form {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -27,7 +27,7 @@
         }
 
         span {
-            margin-top: 10px;
+            margin-top: 15px;
             font-size: 16px;
         }
     }
@@ -88,8 +88,23 @@
 .text-right {
     text-align: right;
     padding-bottom: 30px;
+
     a {
         font-size: 14px;
+        line-height: 1.7;
+        color: #666;
+        &:hover {
+            color: rgba(252,0,255,1);
+        }
+    }
+}
+
+.text-center {
+    text-align: center;
+    padding: 30px;
+
+    a {
+        font-size: 20px;
         line-height: 1.7;
         color: #666;
         &:hover {

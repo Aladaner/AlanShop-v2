@@ -58,6 +58,18 @@
 ._icon-arrow-up:before {
   content: "\ea3a";
 }
+._icon-arrow-right:before {
+  content: "\ea3c";
+}
+._icon-arrow-down:before {
+  content: "\ea3e";
+}
+._icon-arrow-down_2:before {
+  content: "\e90c";
+}
+._icon-arrow-left:before {
+  content: "\ea40";
+}
 ._icon-facebook:before {
   content: "\ea91";
 }

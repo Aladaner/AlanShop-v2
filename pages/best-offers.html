@@ -153,9 +153,91 @@
     <!-- Main-->
     <main class="main">
         <div class="main__container">
+            <!-- Roadmap-->
+            <div class="roadmap">
+                <ul class="roadmap__wrapper">
+                    <li class="roadmap__item">
+                        <a href="/index.html" class="roadmap__link">Главная</a>
+                        <span class="_icon-arrow-right"></span>
+                    </li>
+                    <li class="roadmap__item">
+                        <a href="/index.html" class="roadmap__link">Лучшие предложения</a>
+                    </li>
+                </ul>
+            </div>
 
+            <!-- Catalog-->
+            <div class="catalog">
+
+                <!-- Catalog head-->
+                <div class="catalog-head">
+                    <div class="catalog-head__info">
+                        <h2>Лучшие предложения</h2>
+                        <span>Выбрано 10 товаров.</span>
+                    </div>
+
+                    <div class="catalog-head__sort">
+                        <select name="type-sort" id="type-sort">
+                            <option value="cheap-expensive">От дешевых к дорогим</option>
+                            <option value="expensive-cheap">От дорогих к дешевым</option>
+                            <option value="popular">Популярные</option>
+                            <option value="rating" selected>По рейтингу</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="catalog__wrapper">
+
+                    <!-- Filter-->
+                    <div class="catalog__filter filter">
+
+                        <div class="filter__body">
+
+                            <!-- Category filter-->
+                            <div class="filter__type">
+                                <div class="filter__header">
+                                    <h2>Категории</h2>
+                                    <span class="_icon-arrow-down_2 icon-arrow"></span>
+                                
+                                </div>
+                                
+                                <div class="filter__list">
+                                    <div class="filter__item">
+                                        <input type="checkbox" name="category_1" id="category_1">
+                                        <label for="category_1">Категория 1</label>
+                                    </div>
+                                    <div class="filter__item">
+                                        <input type="checkbox" name="category_1" id="category_2">
+                                        <label for="category_2">Категория 2</label>
+                                    </div>
+                                    <div class="filter__item">
+                                        <input type="checkbox" name="category_1" id="category_3">
+                                        <label for="category_3">Категория 3</label>
+                                    </div>
+                                    <div class="filter__item">
+                                        <input type="checkbox" name="category_1" id="category_4">
+                                        <label for="category_4">Категория 4</label>
+                                    </div>
+                                    <div class="filter__item">
+                                        <input type="checkbox" name="category_1" id="category_5">
+                                        <label for="category_5">Категория 5</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Catalog items-->
+                    <div class="catalog__list">
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/src/js/filter.js"></script>
 </body>
 
 </html>

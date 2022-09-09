@@ -875,6 +875,131 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
   }
 }
+.roadmap {
+  margin-top: 250px;
+  padding: 15px;
+  border-bottom: 1px solid #808080;
+}
+.roadmap__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.roadmap__item span {
+  padding-left: 10px;
+  color: #808080;
+}
+.roadmap__link {
+  color: #808080;
+}
+
+.catalog__wrapper {
+  background-color: #ECF1F2;
+  border-radius: 10px;
+}
+.catalog__filter {
+  width: 25%;
+  background-color: #FFFFFF;
+}
+
+.catalog-head {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.catalog-head__info h2 {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 0;
+}
+.catalog-head__info span {
+  font-size: 15px;
+  color: #808080;
+}
+.catalog-head__sort select {
+  border: 1px solid #808080;
+  border-radius: 3px;
+  padding: 15px;
+  padding-right: 40px;
+  font-size: 15px;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  appearance: none;
+  background-image: url(/src/icons/arrow-down.svg);
+  background-position: right 12px center;
+  background-repeat: no-repeat, repeat;
+  background-size: 15px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.filter__body {
+  border-radius: 15px;
+}
+.filter__type {
+  padding: 15px;
+  padding-top: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.filter__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid red;
+  padding-top: 10px;
+}
+.filter__header:first-child {
+  border: none;
+}
+.filter__header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px;
+}
+.filter__header span {
+  font-size: 10px;
+  padding-right: 20px;
+}
+.filter__list {
+  padding: 0 10px 10px 10px;
+}
+.filter__item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.filter__item input[type=checkbox] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #eeeeee;
+  border: 1px solid #141414;
+  border-radius: 6px;
+}
+.filter__item input[type=checkbox]:checked {
+  background-image: url(/src/icons/CheckOutlined.svg);
+  background-position: center;
+  background-repeat: no-repeat, repeat;
+  background-size: 15px;
+}
+.filter__item label {
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 10px;
+  color: #808080;
+}
+.filter__item:hover label {
+  color: #141414;
+}
+
+.category-show .filter__list {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   .body-header {
     padding: 10px 30px;
@@ -1009,6 +1134,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 110px 30px 30px 30px;
     transition: left 0.3s ease 0s;
     overflow: auto;
+    padding-top: 150px;
   }
   .burgerActive {
     left: 0;

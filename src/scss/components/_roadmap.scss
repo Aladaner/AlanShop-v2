@@ -1,0 +1,29 @@
+.roadmap {
+    margin-top: 250px;
+    padding: 15px;
+    border-bottom: 1px solid $gray;
+    // .roadmap__wrapper
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    // .roadmap__item
+
+    &__item {
+        span {
+            padding-left: 10px;
+            color: $gray;
+        }
+    }
+
+    // .roadmap__link
+
+    &__link {
+        color: $gray;
+    }
+}
+
+

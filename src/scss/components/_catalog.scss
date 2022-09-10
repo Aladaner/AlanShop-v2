@@ -1,5 +1,6 @@
 .catalog {
     &__wrapper {
+        display: flex;
         background-color: $MainWhiteColor;
         border-radius: 10px;
     }
@@ -7,6 +8,19 @@
     &__filter {
         width: 25%;
         background-color: $WhiteColor;
+        margin-right: 10px;
+    }
+
+    &__list {
+        section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        margin: 0;
+        margin-left: 10px;
     }
 }
 
@@ -56,7 +70,6 @@
     // .filter__body
 
     &__body {
-        border-radius: 15px;
     }
 
     &__type {
@@ -132,11 +145,5 @@
                 color: $MainColor;
             }
         }
-    }
-}
-
-.category-show {
-    .filter__list {
-        display: none;
     }
 }

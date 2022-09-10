@@ -1,11 +1,12 @@
-let test = document.querySelectorAll('.icon-arrow');
-let t2 = document.querySelectorAll('.filter__list');
+let iconArrow = document.querySelectorAll('.icon-arrow');
+let filterType = document.querySelector('.filter__type');
 
-if (test.length > 0) {
-    for (let index = 0; index < test.length; index++) {
-        const element = test[index];
+if (iconArrow.length > 0) {
+    for (let index = 0; index < iconArrow.length; index++) {
+        const element = iconArrow[index];
         element.addEventListener("click", function (e) {
-            element.parentElement.classList.toggle('category-show');
+
+            filterType.classList.toggle('category-show');
         });
     }
 }

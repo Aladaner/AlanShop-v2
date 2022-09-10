@@ -894,12 +894,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .catalog__wrapper {
+  display: flex;
   background-color: #ECF1F2;
   border-radius: 10px;
 }
 .catalog__filter {
   width: 25%;
   background-color: #FFFFFF;
+  margin-right: 10px;
+}
+.catalog__list section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.catalog__item {
+  margin: 0;
+  margin-left: 10px;
 }
 
 .catalog-head {
@@ -937,9 +947,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-.filter__body {
-  border-radius: 15px;
-}
 .filter__type {
   padding: 15px;
   padding-top: 10px;
@@ -994,10 +1001,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .filter__item:hover label {
   color: #141414;
-}
-
-.category-show .filter__list {
-  display: none;
 }
 
 @media (min-width: 1024px) {

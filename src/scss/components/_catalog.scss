@@ -15,6 +15,7 @@
         section{
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
         }
     }
 
@@ -30,6 +31,19 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+
+    &__container {
+        display: flex;
+    }
+    .filter__btn {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background: $MainColor;
+        color: $WhiteColor;
+        padding: 10px;
+        border-radius: 3px;
+    }
 
     &__info {
         h2 {
@@ -85,7 +99,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         padding-top: 10px;
 
         h2 {
@@ -141,5 +154,24 @@
                 color: $MainColor;
             }
         }
+    }
+}
+
+@media (max-width: 425px) {
+    .catalog-head {
+        flex-direction: column;        
+        &__container {
+            padding-top: 10px;
+            gap: 20px;
+            
+            .filter__btn {
+                display: flex;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .filter {
+        display: none;
     }
 }

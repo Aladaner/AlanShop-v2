@@ -1,26 +1,25 @@
 .catalog {
     &__wrapper {
         display: flex;
-        background-color: $MainWhiteColor;
+        justify-content: space-between;
         border-radius: 10px;
     }
 
     &__filter {
-        width: 25%;
+        width: 30%;
         background-color: $WhiteColor;
         margin-right: 10px;
     }
 
     &__list {
-        section {
+        section{
             display: flex;
             flex-wrap: wrap;
         }
     }
 
     &__item {
-        margin: 0;
-        margin-left: 10px;
+        margin-top: 0;
     }
 }
 
@@ -73,9 +72,11 @@
     }
 
     &__type {
-        padding: 15px;
+        padding: 10px;
+        margin-bottom: 15px;
         padding-top: 10px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
     }
 
     // .filter__header
@@ -85,12 +86,7 @@
         justify-content: space-between;
         align-items: center;
 
-        border-top: 1px solid red;
         padding-top: 10px;
-
-        &:first-child {
-            border: none;
-        }
 
         h2 {
             font-size: 18px;

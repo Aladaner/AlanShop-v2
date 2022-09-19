@@ -947,7 +947,7 @@
 
                                 <!-- Forgot-->
                                 <div class="text-right">
-                                    <a href="#">Забыл(а) пароль.</a>
+                                    <a href="#fpass-popup" class="popup-link">Забыл(а) пароль.</a>
                                 </div>
 
                                 <!-- Button-->
@@ -1041,6 +1041,65 @@
                                 <!-- Register-->
                                 <div class="text-center">
                                     <a href="#log-popup" class="popup-link">Я уже зарегистрирован.</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot password popup-->
+    <div id="fpass-popup" class="popup">
+        <!-- <a href="#" class="popup__area"></a> Without JS-->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close close-popup">X</a>
+
+                <!-- Login Form-->
+                <div class="form">
+                    <div class="form__container">
+                        <form>
+                            <div class="form__inner">
+                                <div class="form__title">
+                                    <h2>Вход</h2>
+                                    <span>Войдите с помощью:</span>
+                                    <div class="social">
+                                        <a href="" target="_blank" title="Facebook">
+                                            <i class="_icon-facebook"></i>
+                                        </a>
+                                        <a href="" target="_blank" title="Twitter">
+                                            <i class="_icon-twitter"></i>
+                                        </a>
+                                        <a href="" target="_blank" title="Google">
+                                            <i class="_icon-google"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="form__or">
+                                    <span>или</span>
+                                </div>
+
+                                <!-- Email-->
+                                <div class="fields fields__input">
+                                    <label class="control-label" for="login">E-mail</label>
+                                    <input class="control-input" type="email" id="email" placeholder="Введите e-mail."
+                                        required>
+                                </div>                    
+
+                                <!-- Button-->
+                                <div class="container-login">
+                                    <div class="wrap-login">
+                                        <div class="login-btn"></div>
+                                        <button class="btn-login">Восстановить</button>
+                                    </div>
+                                </div>
+
+                                <!-- Register-->
+                                <div class="text-center">
+                                    <a href="#log-popup" class="popup-link">Я вспомнил(а) свой пароль.</a>
                                 </div>
                             </div>
                         </form>

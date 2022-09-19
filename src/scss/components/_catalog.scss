@@ -12,7 +12,7 @@
     }
 
     &__list {
-        section{
+        section {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -35,14 +35,18 @@
     &__container {
         display: flex;
     }
+
     .filter__btn {
         display: none;
         justify-content: center;
         align-items: center;
         background: $MainColor;
-        color: $WhiteColor;
         padding: 10px;
         border-radius: 3px;
+
+        a {
+            color: $WhiteColor;
+        }
     }
 
     &__info {
@@ -82,8 +86,7 @@
 .filter {
     // .filter__body
 
-    &__body {
-    }
+    &__body {}
 
     &__type {
         padding: 10px;
@@ -159,11 +162,12 @@
 
 @media (max-width: 425px) {
     .catalog-head {
-        flex-direction: column;        
+        flex-direction: column;
+
         &__container {
             padding-top: 10px;
             gap: 20px;
-            
+
             .filter__btn {
                 display: flex;
                 cursor: pointer;

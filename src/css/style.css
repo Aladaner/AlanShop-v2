@@ -1044,6 +1044,9 @@ h1, h2, h3, h4, h5, h6 {
   .filter {
     display: none;
   }
+  .popup .filter {
+    display: block;
+  }
 }
 @media (min-width: 1024px) {
   .body-header {

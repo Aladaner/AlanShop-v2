@@ -185,7 +185,7 @@
                             </select>
                         </div>
                         <div class="filter__btn">
-                            <a href="">Фильтр</a>
+                            <a href="#filter-popup" class="popup-link">Фильтр</a>
                             <!-- <span>Фильтр</span> -->
                         </div>
                     </div>
@@ -211,19 +211,19 @@
                                         <label for="category_1">Категория 1</label>
                                     </div>
                                     <div class="filter__item">
-                                        <input type="checkbox" name="category_1" id="category_2">
+                                        <input type="checkbox" name="category_2" id="category_2">
                                         <label for="category_2">Категория 2</label>
                                     </div>
                                     <div class="filter__item">
-                                        <input type="checkbox" name="category_1" id="category_3">
+                                        <input type="checkbox" name="category_3" id="category_3">
                                         <label for="category_3">Категория 3</label>
                                     </div>
                                     <div class="filter__item">
-                                        <input type="checkbox" name="category_1" id="category_4">
+                                        <input type="checkbox" name="category_4" id="category_4">
                                         <label for="category_4">Категория 4</label>
                                     </div>
                                     <div class="filter__item">
-                                        <input type="checkbox" name="category_1" id="category_5">
+                                        <input type="checkbox" name="category_5" id="category_5">
                                         <label for="category_5">Категория 5</label>
                                     </div>
                                 </div>
@@ -811,6 +811,84 @@
                                 </div>
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter popup-->
+
+    <div id="filter-popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close close-popup">X</a>
+
+                <!-- Фильтр-->
+                <div class="filter">
+                    <div class="filter__body">
+
+                        <!-- Category filter-->
+                        <div class="filter__type">
+                            <div class="filter__header">
+                                <h2>Категории</h2>
+                                <span class="_icon-arrow-down_2"></span>
+                            </div>
+
+                            <div class="filter__list">
+                                <div class="filter__item">
+                                    <input type="checkbox" name="category_1" id="category_1">
+                                    <label for="category_1">Категория 1</label>
+                                </div>
+                                <div class="filter__item">
+                                    <input type="checkbox" name="category_2" id="category_2">
+                                    <label for="category_2">Категория 2</label>
+                                </div>
+                                <div class="filter__item">
+                                    <input type="checkbox" name="category_3" id="category_3">
+                                    <label for="category_3">Категория 3</label>
+                                </div>
+                                <div class="filter__item">
+                                    <input type="checkbox" name="category_4" id="category_4">
+                                    <label for="category_4">Категория 4</label>
+                                </div>
+                                <div class="filter__item">
+                                    <input type="checkbox" name="category_5" id="category_5">
+                                    <label for="category_5">Категория 5</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Manufacturer filter-->
+                        <div class="filter__type">
+                            <div class="filter__header">
+                                <h2>Производитель</h2>
+                                <span class="_icon-arrow-down_2"></span>
+                            </div>
+
+                            <div class="filter__list">
+                                <div class="filter__item">
+                                    <input type="checkbox" name="manufacturer_1" id="manufacturer_1">
+                                    <label for="manufacturer_1">Производитель 1</label>
+                                </div>
+                                <div class="filter__item">
+                                    <input type="checkbox" name="manufacturer_1" id="manufacturer_2">
+                                    <label for="manufacturer_2">Производитель 2</label>
+                                </div>
+                                <div class="filter__item">
+                                    <input type="checkbox" name="manufacturer_1" id="manufacturer_3">
+                                    <label for="manufacturer_3">Производитель 3</label>
+                                </div>
+                                <div class="filter__item">
+                                    <input type="checkbox" name="manufacturer_1" id="manufacturer_4">
+                                    <label for="manufacturer_4">Производитель 4</label>
+                                </div>
+                                <div class="filter__item">
+                                    <input type="checkbox" name="manufacturer_1" id="manufacturer_5">
+                                    <label for="manufacturer_5">Производитель 5</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

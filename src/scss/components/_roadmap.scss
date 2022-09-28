@@ -23,6 +23,11 @@
 
     &__link {
         color: $gray;
+
+        &:last-child {
+            color: $MainColor;
+            font-weight: 500;
+        }
     }
 }
 

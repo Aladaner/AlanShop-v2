@@ -901,6 +901,10 @@ h1, h2, h3, h4, h5, h6 {
 .roadmap__link {
   color: #808080;
 }
+.roadmap__link:last-child {
+  color: #141414;
+  font-weight: 500;
+}
 
 @media (max-width: 425px) {
   .roadmap {
@@ -1066,6 +1070,25 @@ h1, h2, h3, h4, h5, h6 {
   color: #141414;
 }
 
+.product__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.product__header-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+.product__header-id {
+  font-size: 14px;
+  font-weight: 500;
+  color: #808080;
+}
+.product__container {
+  display: flex;
+}
 @media (min-width: 1024px) {
   .body-header {
     padding: 10px 30px;

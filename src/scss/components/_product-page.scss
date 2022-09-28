@@ -1,0 +1,36 @@
+.product {
+
+    // .product__header
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+
+        // .product__header-title
+        &-title {
+            font-size: 24px;
+            font-weight: 500;
+        }
+        
+        // .product__header-id
+        &-id {
+            font-size: 14px;
+            font-weight: 500;
+            color: $gray;
+        }
+    }
+
+    // .product__container
+
+    &__container {
+        display: flex;
+    }
+
+    // .product__info
+
+    &__info {
+    }
+}

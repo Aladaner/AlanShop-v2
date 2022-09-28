@@ -103,6 +103,15 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 10px;
+        cursor: pointer;
+
+        &.filterActive {
+            span {
+                transform: rotate(-180deg);
+                padding-left: 20px;
+                transition: all 0.3s ease 0s;
+            }
+        }
 
         h2 {
             font-size: 18px;

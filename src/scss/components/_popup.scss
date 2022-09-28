@@ -16,17 +16,6 @@
     overflow-x: hidden;
     overflow-y: auto;
     transition: all 0.8s ease 0s;
-
-    // .popup__body
-
-    // &:target { Without JS
-    //     opacity: 1;
-    //     visibility: visible;
-    //     .popup__content {
-    //         transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
-    //         opacity: 1;
-    //     }
-    // }
     
     &.open {
         opacity: 1;

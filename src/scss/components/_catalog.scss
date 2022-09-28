@@ -83,92 +83,6 @@
     }
 }
 
-.filter {
-    // .filter__body
-
-    &__body {}
-
-    &__type {
-        padding: 10px;
-        margin-bottom: 15px;
-        padding-top: 10px;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        border-radius: 10px;
-    }
-
-    // .filter__header
-
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 10px;
-        cursor: pointer;
-
-        &.filterActive {
-            span {
-                transform: rotate(-180deg);
-                padding-left: 20px;
-                transition: all 0.3s ease 0s;
-            }
-        }
-
-        h2 {
-            font-size: 18px;
-            font-weight: 700;
-            padding: 10px;
-        }
-
-        span {
-            font-size: 10px;
-            padding-right: 20px;
-        }
-    }
-
-    // .filter__list
-
-    &__list {
-        padding: 0 10px 10px 10px;
-    }
-
-    // .filter__item
-
-    &__item {
-        display: flex;
-        align-items: center;
-        padding: 5px;
-
-        input[type=checkbox] {
-            appearance: none;
-            width: 20px;
-            height: 20px;
-            background-color: $lightGray;
-            border: 1px solid $MainColor;
-            border-radius: 6px;
-
-            &:checked {
-                background-image: url(/src/icons/CheckOutlined.svg);
-                background-position: center;
-                background-repeat: no-repeat, repeat;
-                background-size: 15px;
-            }
-        }
-
-        label {
-            font-size: 17px;
-            font-weight: 500;
-            padding-left: 10px;
-            color: $gray;
-        }
-
-        &:hover {
-            label {
-                color: $MainColor;
-            }
-        }
-    }
-}
-
 @media (max-width: 425px) {
     .catalog-head {
         flex-direction: column;
@@ -179,7 +93,6 @@
 
             .filter__btn {
                 display: flex;
-                cursor: pointer;
             }
         }
     }
@@ -188,7 +101,10 @@
         display: none;
     }
 
-    .popup .filter {
-        display: block;
+    .popup {
+        .filter {
+            display: block;
+            margin-top: 10px;
+        }
     }
 }

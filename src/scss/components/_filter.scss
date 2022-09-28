@@ -1,0 +1,100 @@
+.filter {
+    // .filter__body
+
+    &__body {}
+
+    &__type {
+        padding: 10px;
+        margin-bottom: 15px;
+        padding-top: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+    }
+
+    // .filter__header
+
+    &__header {
+        padding-top: 10px;
+        cursor: pointer;
+        position: relative;
+
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            padding: 10px;
+        }
+
+        ::before, ::after {
+            content: '';
+            width: 10px;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            top: 27px;
+            transition: all 0.3s ease 0s;
+        }
+
+        ::before {
+            transform: rotate(40deg);
+            right: 25px;
+        }
+
+        ::after {
+            transform: rotate(-40deg);
+            right: 17px;
+        }
+
+        &.filterActive {
+            ::before {
+                transform: rotate(-40deg);
+            }
+
+            ::after {
+                transform: rotate(40deg);
+            }
+        }
+    }
+
+    // .filter__list
+
+    &__list {
+        padding: 0 10px 10px 10px;
+    }
+
+    // .filter__item
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+
+        input[type=checkbox] {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background-color: $lightGray;
+            border: 1px solid $MainColor;
+            border-radius: 6px;
+
+            &:checked {
+                background-image: url(/src/icons/CheckOutlined.svg);
+                background-position: center;
+                background-repeat: no-repeat, repeat;
+                background-size: 15px;
+            }
+        }
+
+        label {
+            font-size: 17px;
+            font-weight: 500;
+            padding-left: 10px;
+            color: $gray;
+        }
+
+        &:hover {
+            label {
+                color: $MainColor;
+            }
+        }
+    }
+}

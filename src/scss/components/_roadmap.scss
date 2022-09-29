@@ -31,6 +31,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .roadmap {
+        margin-top: 150px;
+    }
+}
+
 @media (max-width: 425px) {
     .roadmap {
         margin-top: 110px;

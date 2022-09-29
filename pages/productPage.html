@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="/src/css/iconsfont.css">
     <link rel="stylesheet" href="/src/css/topButton.css">
     <link rel="stylesheet" href="/src/css/slider.css">
+    <link rel="stylesheet" href="/src/css/swiper.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
 </head>
 
@@ -179,11 +181,83 @@
 
                 <!-- Product container-->
                 <div class="product__container">
-                    <div class="product__slider">
-                        
+                    <!-- Product images-->
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+
+                            <!-- Слайды-->
+                            <div class="swiper-slide">
+                                <img src="/src/img/goods/1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/img/goods/2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/img/goods/3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/img/goods/4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/img/goods/5.jpg" alt="">
+                            </div>
+
+                        </div>
+
+                        <!-- Добавляем если нам нужны стрелки управления-->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <div thumbsSlider="" class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+
+                                <!-- Слайды-->
+                                <div class="swiper-slide">
+                                    <img src="/src/img/goods/1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/src/img/goods/2.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/src/img/goods/3.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/src/img/goods/4.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/src/img/goods/5.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Information-->
                     <div class="product__info">
-                        <span>test</span>
+                        <div class="info__text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna dui, volutpat nec
+                                urna eget,
+                                mattis venenatis arcu. Maecenas dignissim metus ac varius congue. Cras fermentum
+                                pulvinar orci,
+                                at finibus justo. Nulla quis dui vel tortor egestas sollicitudin. Vivamus sollicitudin
+                                erat
+                                sollicitudin, sollicitudin libero interdum, laoreet purus. Quisque eu lorem a ex
+                                porttitor
+                                sagittis non id ipsum. Aliquam eget dolor nec ipsum elementum consequat id lobortis
+                                tortor.
+                                Aenean ac sem bibendum lorem mattis efficitur.Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit. Morbi urna dui, volutpat nec urna eget, mattis venenatis arcu. Maecenas dignissim
+                                metus ac
+                                varius congue. Cras fermentum pulvinar orci, at finibus justo. Nulla quis dui vel tortor
+                                egestas
+                                sollicitudin. Vivamus sollicitudin erat sollicitudin, sollicitudin libero interdum,
+                                laoreet
+                                purus. Quisque eu lorem a ex porttitor sagittis non id ipsum. Aliquam eget dolor nec
+                                ipsum
+                                elementum consequat id lobortis tortor. Aenean ac sem bibendum lorem mattis efficitur.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -476,6 +550,8 @@
     <script src="/src/js/slider-settings.js"></script>
     <script src="/src/js/rating-star.js"></script>
     <script src="/src/js/popups.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/src/js/swiper.js"></script>
 </body>
 
 </html>

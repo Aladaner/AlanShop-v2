@@ -14,7 +14,7 @@
             font-size: 24px;
             font-weight: 500;
         }
-        
+
         // .product__header-id
         &-id {
             font-size: 14px;
@@ -33,5 +33,108 @@
 
     &__info {
         width: 100%;
+    }
+
+    &__status {
+        text-align: center;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 700;
+        color: $light-green;
+    }
+
+    &__trade {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+        border-radius: 10px;
+        padding: 10px;
+
+        &-price {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .product-cart__btn {
+            width: 20%;
+        }
+    }
+
+    &__delivery {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    &__garanty {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 15px;
+        box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+        border-radius: 10px;
+        padding: 10px;
+
+        span {
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 25px;
+        }
+    }
+
+    &__description {
+        margin-top: 15px;
+        box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 15px;
+
+        p {
+            margin-left: 10px;
+        }
+    }
+}
+
+.delivery {
+
+    // .delivery__item
+
+    &__item {
+        display: flex;
+        font-size: 18px;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px;
+    }
+
+    span {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+
+    &__item-type, &__item-time, &__item-price {
+        width: 30%;
+    }
+    // .delivery__item-type
+    
+    &__item-type {}
+
+    // .delivery__item-time
+
+    &__item-time {
+        font-weight: 500;
+    }
+
+    // .delivery__item-price
+
+    &__item-price {
+        font-weight: 500;
+        color: $light-green;
+        text-align: right;
     }
 }

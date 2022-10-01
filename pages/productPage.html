@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alan Shop v2</title>
+    <title>Комп'ютер Artline Gaming V3</title>
     <!--Стили-->
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/src/css/iconsfont.css">
     <link rel="stylesheet" href="/src/css/topButton.css">
     <link rel="stylesheet" href="/src/css/slider.css">
     <link rel="stylesheet" href="/src/css/swiper.css">
+    <link rel="stylesheet" href="/src/css/tabs.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
@@ -233,30 +234,78 @@
 
                     <!-- Information-->
                     <div class="product__info">
-                        <div class="info__text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna dui, volutpat nec
-                                urna eget,
-                                mattis venenatis arcu. Maecenas dignissim metus ac varius congue. Cras fermentum
-                                pulvinar orci,
-                                at finibus justo. Nulla quis dui vel tortor egestas sollicitudin. Vivamus sollicitudin
-                                erat
-                                sollicitudin, sollicitudin libero interdum, laoreet purus. Quisque eu lorem a ex
-                                porttitor
-                                sagittis non id ipsum. Aliquam eget dolor nec ipsum elementum consequat id lobortis
-                                tortor.
-                                Aenean ac sem bibendum lorem mattis efficitur.Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                                elit. Morbi urna dui, volutpat nec urna eget, mattis venenatis arcu. Maecenas dignissim
-                                metus ac
-                                varius congue. Cras fermentum pulvinar orci, at finibus justo. Nulla quis dui vel tortor
-                                egestas
-                                sollicitudin. Vivamus sollicitudin erat sollicitudin, sollicitudin libero interdum,
-                                laoreet
-                                purus. Quisque eu lorem a ex porttitor sagittis non id ipsum. Aliquam eget dolor nec
-                                ipsum
-                                elementum consequat id lobortis tortor. Aenean ac sem bibendum lorem mattis efficitur.
-                            </p>
+                        <div class="product__status">Есть в наличие</div>
+
+                        <div class="product__trade">
+                            <div class="product__trade-price">300$</div>
+                            <button type="button" class="product-cart__btn" tabindex="0"><span class="_icon-backet">В
+                                корзину</span></button>
+                            <a href="" class="cell__compare _icon-comparison" tabindex="0"></a>
+                            <a href="" class="cell__favourite _icon-favorites" tabindex="0"></a>
+                        </div>
+
+                        <div class="product__delivery delivery">
+                            <div class="product__delivery-item delivery__item">
+                                <span class="_icon-store"></span>
+                                <div class="delivery__item-type">Самовывоз с точек выдачи "AlanShop"</div>
+                                <div class="delivery__item-time">Забрать завтра с 10:00</div>
+                                <div class="delivery__item-price">Бесплатно.</div>
+                            </div>
+                            <div class="product__delivery-item delivery__item">
+                                <span class="_icon-storefront"></span>
+                                <div class="delivery__item-type">Самовывоз из отделений почтовых операторов</div>
+                                <div class="delivery__item-time">Отправим сегодня.</div>
+                                <div class="delivery__item-price">5 $</div>
+                            </div>
+                            <div class="product__delivery-item delivery__item">
+                                <span class="_icon-storefront"></span>
+                                <div class="delivery__item-type">Доставка курьером</div>
+                                <div class="delivery__item-time">Забрати завтра з 12:00</div>
+                                <div class="delivery__item-price">10$</div>
+                            </div>
+                        </div>
+
+                        <div class="product__garanty">
+                            <span class="_icon-verified_user"></span>
+                            <div class="product__garanty-info">
+                                <b>Гарантия.</b> 38 месяцев Обмен/возврат товара в течение 14 дней 
+                            </div>
+                        </div>
+
+                        <div class="product__description">
+                            <p>AMD Ryzen 5 3600 (3.6 — 4.2 ГГц) / RAM 16 ГБ / HDD 1 ТБ + SSD 480 ГБ / AMD Radeon RX 6600, 8 ГБ / без ОД / LAN / без ОС</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product full info-->
+                <div class="product-tabs tabs">
+                    <div class="tabs__nav">
+                       <ul>
+                        <li>
+                            <a href="#home"><span>Home</span></a>
+                        </li>
+                        <li>
+                            <a href="#contact"><span>Contact</span></a>
+                        </li>
+                        <li>
+                            <a href="#about"><span>About</span></a>
+                        </li>
+                       </ul>
+                    </div>
+
+                    <div class="tabs__body">
+                        <div class="" id="home">
+                            HOME
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores iste corrupti aliquid ratione dolore qui blanditiis fugiat natus neque repudiandae, aspernatur corporis praesentium assumenda aperiam minima repellendus quia quisquam? Unde!
+                        </div>
+                        <div class="" id="contact">
+                            CONTENT
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ex dolorem, eos recusandae consectetur neque voluptatibus aperiam inventore repellendus amet praesentium qui! Veniam consequatur obcaecati deserunt id doloribus eos a?
+                        </div>
+                        <div class="" id="about">
+                            ABOUT
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque laboriosam commodi! Culpa a iusto porro! Sed, odio. Omnis dolorem quo aspernatur illum eaque! Assumenda excepturi eveniet omnis laborum nostrum!
                         </div>
                     </div>
                 </div>

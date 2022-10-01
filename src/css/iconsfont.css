@@ -91,3 +91,15 @@
 ._icon-person:before {
   content: "\e90b";
 }
+._icon-local_shipping:before {
+  content: "\e90d";
+}
+._icon-store:before {
+  content: "\e90e";
+}
+._icon-storefront:before {
+  content: "\e90f";
+}
+._icon-verified_user:before {
+  content: "\e910";
+}

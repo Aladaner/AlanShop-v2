@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/src/css/topButton.css">
     <link rel="stylesheet" href="/src/css/slider.css">
     <link rel="stylesheet" href="/src/css/swiper.css">
-    <link rel="stylesheet" href="/src/css/tabs.css">
+    <link rel="stylesheet" href="/src/css/rating-star.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
@@ -172,6 +172,7 @@
                 </ul>
             </div>
 
+            <!-- Product-->
             <div class="product">
 
                 <!-- Product header-->
@@ -182,6 +183,7 @@
 
                 <!-- Product container-->
                 <div class="product__container">
+
                     <!-- Product images-->
                     <div class="swiper mySwiper2">
                         <div class="swiper-wrapper">
@@ -239,7 +241,7 @@
                         <div class="product__trade">
                             <div class="product__trade-price">300$</div>
                             <button type="button" class="product-cart__btn" tabindex="0"><span class="_icon-backet">В
-                                корзину</span></button>
+                                    корзину</span></button>
                             <a href="" class="cell__compare _icon-comparison" tabindex="0"></a>
                             <a href="" class="cell__favourite _icon-favorites" tabindex="0"></a>
                         </div>
@@ -260,7 +262,7 @@
                             <div class="product__delivery-item delivery__item">
                                 <span class="_icon-storefront"></span>
                                 <div class="delivery__item-type">Доставка курьером</div>
-                                <div class="delivery__item-time">Забрати завтра з 12:00</div>
+                                <div class="delivery__item-time">Забрать завтра з 12:00</div>
                                 <div class="delivery__item-price">10$</div>
                             </div>
                         </div>
@@ -268,44 +270,237 @@
                         <div class="product__garanty">
                             <span class="_icon-verified_user"></span>
                             <div class="product__garanty-info">
-                                <b>Гарантия.</b> 38 месяцев Обмен/возврат товара в течение 14 дней 
+                                <b>Гарантия.</b> 38 месяцев Обмен/возврат товара в течение 14 дней
                             </div>
                         </div>
 
                         <div class="product__description">
-                            <p>AMD Ryzen 5 3600 (3.6 — 4.2 ГГц) / RAM 16 ГБ / HDD 1 ТБ + SSD 480 ГБ / AMD Radeon RX 6600, 8 ГБ / без ОД / LAN / без ОС</p>
+                            <p>AMD Ryzen 5 3600 (3.6 — 4.2 ГГц) / RAM 16 ГБ / HDD 1 ТБ + SSD 480 ГБ / AMD Radeon RX
+                                6600, 8 ГБ / без ОД / LAN / без ОС</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Product full info-->
-                <div class="product-tabs tabs">
-                    <div class="tabs__nav">
-                       <ul>
-                        <li>
-                            <a href="#home"><span>Home</span></a>
-                        </li>
-                        <li>
-                            <a href="#contact"><span>Contact</span></a>
-                        </li>
-                        <li>
-                            <a href="#about"><span>About</span></a>
-                        </li>
-                       </ul>
+                <div class="product-tabs tab">
+                    <!-- Tabs navigations-->
+                    <div class="tab__nav">
+                        <!-- tabs buttons  -->
+                        <button class="tab__btn tab__btn-active" data-for-tab="1">Описание</button>
+                        <button class="tab__btn" data-for-tab="2">Характеристики</button>
+                        <button class="tab__btn" data-for-tab="3">Отзывы</button>
                     </div>
 
-                    <div class="tabs__body">
-                        <div class="" id="home">
-                            HOME
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores iste corrupti aliquid ratione dolore qui blanditiis fugiat natus neque repudiandae, aspernatur corporis praesentium assumenda aperiam minima repellendus quia quisquam? Unde!
+                    <!-- Tabs content  -->
+                    <div class="tab__content">
+                        <!-- Product description-->
+                        <div class="tab__item tab__item-active" data-tab="1">
+                            <div class="tab__description">
+                                <p><b>ARTLINE Gaming</b> – это игровые персональные компьютеры, чье призвание быть
+                                    развлекательным
+                                    центром для любого пользователя. При создании моделей проводится тщательный подбор,
+                                    оценка возможностей и совместимость друг с другом каждого компонента. Благодаря
+                                    разнообразию серии <b>Gaming</b>, каждый сможет подобрать себе модель исходя из
+                                    личных
+                                    предпочтений.</p>
+
+                                <p>Игровой ПК <b>ARTLINE Gaming X48v37</b> построен на платформе материнской платы ASUS
+                                    PRIME
+                                    B450M-K с разъемом AM4 и поддержкой процессоров AMD всех поколений Ryzen. Имеет
+                                    технологию 5X Protection III, которая охватывает целый ряд инженерных решений для
+                                    защиты
+                                    от электрических перегрузок, коррозии и прочих проблем. А также набор всех
+                                    современных
+                                    интерфейсов и портов (USB 3.1 Gen2, гигабитный Ethernet, слоты высокоскоростных
+                                    твердотельных накопителей М.2) и многое другое.</p>
+
+                                <p>В роли процессора выступает AMD Ryzen 5 3600 с 6 ядрами, 12 потоками и частотой до
+                                    4.2
+                                    ГГц на ядро. Созданный на 7-нм техпроцессе, данный чип семейства Matisse имеет
+                                    хорошую
+                                    производительность. Его удачное соотношение цены и качества делает его наиболее
+                                    подходящим вариантом в данной сборке. В качестве охлаждения используется кулер
+                                    Performa
+                                    5X.</p>
+
+                                <p>Качественную и плавную графику в играх для создаст AMD Radeon RX 6600, построенная на
+                                    архитектуре RDNA 2, оснащенная высокопроизводительными вычислительными блоками, 32
+                                    МБ
+                                    революционной кэш-памяти AMD Infinity Cache и 8 ГБ высокоскоростной памяти GDDR6.
+                                    Предоставляет геймерам передовые возможности, отвечающие постоянно растущим
+                                    требованиям
+                                    современных игр.</p>
+
+                                <p>Две планки по 8 ГБ оперативной памяти поколения DDR4 c эффективной рабочей частотой
+                                    2666
+                                    МГц обеспечат быструю и стабильную работу ПК.</p>
+
+                                <p>Высокую скорость отклика системы и приложений обеспечит установленный NVME
+                                    SSD-накопитель емкостью 1 ТБ.</p>
+
+                                <p>Все комплектующие <b>ARTLINE Gaming X48v37</b> размещены в эффектном корпусе QUBE
+                                    BREEZE с
+                                    блоком питания на 600 Ватт и комплектом 5-ти цветных вентиляторов.</p>
+
+                                <p>Игровой компьютер <b>ARTLINE Gaming</b> – это ваш пропуск в мир популярных игр.</p>
+                            </div>
                         </div>
-                        <div class="" id="contact">
-                            CONTENT
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ex dolorem, eos recusandae consectetur neque voluptatibus aperiam inventore repellendus amet praesentium qui! Veniam consequatur obcaecati deserunt id doloribus eos a?
+
+                        <!-- Product characteristics-->
+                        <div class="tab__item" data-tab="2">
+                            <div class="tab__characteristics characteristics">
+                                <dl>
+                                    <div class="characteristics__item">
+                                        <dt>Процесор:</dt>
+                                        <dd>Шестиядерний Intel Core i5-10400F (2.9 – 4.3 ГГц)</dd>
+                                    </div>
+
+                                    <div class="characteristics__item">
+                                        <dt>Чипсет материнской платы:</dt>
+                                        <dd>Intel H510 (PRIME H510M-K)</dd>
+                                    </div>
+
+                                    <div class="characteristics__item">
+                                        <dt>Объем оперативной памяти:</dt>
+                                        <dd>16 ГБ</dd>
+                                    </div>
+
+                                    <div class="characteristics__item">
+                                        <dt>Мощность БП:</dt>
+                                        <dd>500 Вт</dd>
+                                    </div>
+
+                                    <div class="characteristics__item">
+                                        <dt>Видеокарта:</dt>
+                                        <dd>GeForce GTX 1650</dd>
+                                    </div>
+
+                                    <div class="characteristics__item">
+                                        <dt>Размеры:</dt>
+                                        <dd>325 х 200 х 353 мм</dd>
+                                    </div>
+
+                                    <div class="characteristics__item">
+                                        <dt>Вес:</dt>
+                                        <dd>7 кг</dd>
+                                    </div>
+
+                                    <div class="characteristics__item">
+                                        <dt>Объем SSD:</dt>
+                                        <dd>480 ГБ</dd>
+                                    </div>
+
+                                    <div class="characteristics__item">
+                                        <dt>Объем HDD:</dt>
+                                        <dd>1 ТБ</dd>
+                                    </div>
+
+                                    <div class="characteristics__item">
+                                        <dt>Тип видеокарты:</dt>
+                                        <dd>Дискретная</dd>
+                                    </div>
+
+                                    <div class="characteristics__item">
+                                        <dt>Производитель GPU:</dt>
+                                        <dd>NVIDIA</dd>
+                                    </div>
+
+                                    <div class="characteristics__item">
+                                        <dt>Объем видеопамяти:</dt>
+                                        <dd>4 ГБ</dd>
+                                    </div>
+
+                                    <div class="characteristics__item">
+                                        <dt>Гарантия:</dt>
+                                        <dd>38 місяців</dd>
+                                    </div>
+
+                                    <div class="characteristics__item" id="ports">
+                                        <dt>Порты:</dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <b>На передней панели:</b>
+                                                    <br>
+                                                    1 x USB 3.0
+                                                    <br>
+                                                    1 x USB 2.0
+                                                    <br>
+                                                    2 x аудиоразъема
+                                                    <br>
+                                                    <br>
+                                                    <b>На задней панели (материнская плата):</b>
+                                                    <br>
+                                                    1 х PS/2
+                                                    <br>
+                                                    2 x USB 3.2 Gen 1 Type-A
+                                                    <br>
+                                                    4 x USB 2.0
+                                                    <br>
+                                                    1 x LAN (RJ-45)
+                                                    <br>
+                                                    3 x аудио разъема
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </div>
+                                </dl>
+                            </div>
                         </div>
-                        <div class="" id="about">
-                            ABOUT
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque laboriosam commodi! Culpa a iusto porro! Sed, odio. Omnis dolorem quo aspernatur illum eaque! Assumenda excepturi eveniet omnis laborum nostrum!
+
+                        <!-- Product comments-->
+                        <div class="tab__item" data-tab="3">
+                            <div class="tab__comments comments">
+                                <div class="comments__create">
+                                    <span>Оставьте свой отзыв об этом товаре</span>
+                                    <button type="submit" class="comments__btn">Написать отзыв</button>
+                                </div>
+
+                                <div class="comments__container">
+                                    <div class="comments__body">
+                                        <!-- Comments header-->
+                                        <div class="comments__header">
+                                            <span class="comments__header-name">Victor</span>
+                                            <div class="comments__reating rating ">
+                                                <div class="rating__body">
+                                                    <div class="rating__active" style="width: 72%;"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" name="rating" id="" value="1" tabindex="0">
+                                                        <input type="radio" class="rating__item" name="rating" id="" value="2" tabindex="0">
+                                                        <input type="radio" class="rating__item" name="rating" id="" value="3" tabindex="0">
+                                                        <input type="radio" class="rating__item" name="rating" id="" value="4" tabindex="0">
+                                                        <input type="radio" class="rating__item" name="rating" id="" value="5" tabindex="0">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                            </div>
+                                            <span class="comments__header-date">03.10.2022</span>
+                                        </div>
+
+                                        <!-- Comments inner-->
+                                        <div class="comments__inner">                                            
+
+                                            <div class="comments__inner-text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut commodi cupiditate dignissimos repellat? Aperiam iure dolore modi exercitationem nam. Facilis, quasi. Distinctio ex repellendus animi suscipit culpa tempora similique. Labore?</p>
+                                            </div>  
+                                            <div class="comments__inner-dignity">
+                                                <h2>Достоинства:</h2>
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro reprehenderit quos ratione eos culpa modi maxime corrupti laudantium optio officiis id voluptatem accusantium cumque veritatis, assumenda aliquid amet adipisci earum.</p>
+                                            </div>
+                                            <div class="comments__inner-limitations">
+                                                <h2>Недостатки:</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat nam odio maiores eum molestiae quis, quia totam quasi ullam itaque iure aspernatur velit ipsum dolorem. Est neque officiis impedit.</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Comments footer-->
+                                        <div class="comments__footer">
+                                            <a href="">Ответить</a>
+                                            <a href="" class="cell__favourite _icon-favorites" tabindex="0"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -601,6 +796,7 @@
     <script src="/src/js/popups.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/src/js/swiper.js"></script>
+    <script src="/src/js/tabs.js"></script>
 </body>
 
 </html>

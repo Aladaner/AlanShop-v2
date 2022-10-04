@@ -976,7 +976,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   display: inline-block;
   appearance: none;
-  background-image: url(../src/icons/arrow-down.svg);
+  background-image: url(../icons/arrow-down.svg);
   background-position: right 12px center;
   background-repeat: no-repeat, repeat;
   background-size: 15px;

@@ -1060,7 +1060,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 6px;
 }
 .filter__item input[type=checkbox]:checked {
-  background-image: url(/src/icons/CheckOutlined.svg);
+  background-image: url(../icons/CheckOutlined.svg);
   background-position: center;
   background-repeat: no-repeat, repeat;
   background-size: 15px;

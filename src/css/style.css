@@ -1119,6 +1119,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .product__trade .product-cart__btn, .product__trade .comments__btn {
   width: 20%;
+  text-align: center;
 }
 .product__delivery {
   display: flex;
@@ -1176,6 +1177,66 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
 }
 
+@media (max-width: 1440px) {
+  .product {
+    margin: 0 20px;
+  }
+  .product__trade {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .product__trade .product-cart__btn, .product__trade .comments__btn {
+    width: 100%;
+  }
+  .product__trade a {
+    padding: 0 20px;
+  }
+  .product__delivery-item {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .product__delivery-item, .product__garanty-info {
+    font-size: 15px;
+  }
+  .tab__description,
+.tab__comments {
+    font-size: 15px;
+  }
+  .comments__header span {
+    font-size: 15px;
+  }
+  .comments__header .rating {
+    font-size: 28px;
+  }
+  .characteristics__item dt {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .product__container {
+    flex-wrap: wrap;
+  }
+  .tab__nav {
+    flex-direction: column;
+  }
+}
+@media (max-width: 425px) {
+  .product__header {
+    flex-wrap: wrap;
+  }
+  .product__header-title {
+    font-size: 18px;
+    padding: 5px 0;
+  }
+  .product__delivery-item, .product__garanty-info, .product__description {
+    font-size: 13px;
+  }
+  .tab__description,
+.tab__comments {
+    font-size: 13px;
+  }
+}
 .tab {
   display: flex;
   align-items: center;
@@ -1189,7 +1250,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 .tab__btn {
-  background-color: #fff;
+  background-color: inherit;
   border: none;
   border-bottom: 1px solid #808080;
   color: #141414;
@@ -1197,7 +1258,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0;
   margin: 10px 0;
   outline: none;
-  width: 15%;
+  width: 100%;
 }
 .tab__btn-active {
   border-bottom: 2px solid #00b96b;
@@ -1305,6 +1366,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #00b96b;
 }
 
+@media (max-width: 425px) {
+  .comments__create {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .comments__create span {
+    font-size: 15px;
+  }
+  .comments__create button {
+    font-size: 14px;
+  }
+  .comments__header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
 @media (min-width: 1024px) {
   .body-header {
     padding: 10px 30px;

@@ -16,7 +16,7 @@
     // .tab__btn
 
     &__btn {
-        background-color: #fff;
+        background-color: inherit;
         border: none;
         border-bottom: 1px solid $gray;
         color: $MainColor;
@@ -24,7 +24,7 @@
         padding: 10px 0;
         margin: 10px 0;
         outline: none;
-        width: 15%;
+        width: 100%;
 
         // .tab__btn-active
         &-active {
@@ -115,7 +115,7 @@
     &__create {
         display: flex;
         justify-content: space-between;
-        padding:  10px;
+        padding: 10px;
         align-items: center;
 
         span {
@@ -132,15 +132,14 @@
         font-size: 16px;
     }
 
-    &__container {
-    }
-    
-    &__body {        
+    &__container {}
+
+    &__body {
         box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
         border-radius: 10px;
     }
 
-    &__header{
+    &__header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -151,6 +150,7 @@
             font-weight: 700;
             font-size: 18px;
         }
+
         &-date {
             color: $gray;
             font-size: 14px;
@@ -160,7 +160,7 @@
     &__inner {
         text-align: left;
         padding: 15px 10px;
-        
+
         h2 {
             color: $MainColor;
             font-weight: 500;
@@ -172,7 +172,7 @@
             color: $gray;
         }
     }
-    
+
     &__footer {
         display: flex;
         justify-content: space-between;
@@ -183,5 +183,23 @@
             font-weight: 500;
             color: $light-green;
         }
+    }
+}
+
+@media (max-width: 425px) {
+    .comments__create {
+        flex-direction: column;
+        gap: 10px;
+        span {
+            font-size: 15px;
+        }
+        button {
+            font-size: 14px;
+        }
+    }
+
+    .comments__header {
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }

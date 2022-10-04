@@ -59,3 +59,14 @@
   max-height: 100px;
   object-fit: contain;
 }
+
+@media (max-width: 1440px) {
+  .mySwiper {
+    display: none;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+}
